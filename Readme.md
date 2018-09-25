@@ -1,6 +1,6 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Алексей Мамаев](https://up.htmlacademy.ru/adaptive/15/user/657189).
+* Студент: [Алексей Мамаев (LexiosAlex)](https://up.htmlacademy.ru/adaptive/15/user/657189).
 * Наставник: [Виталя Игошин (Vitaligo)](https://htmlacademy.ru/profile/id353627).
 
 ---
