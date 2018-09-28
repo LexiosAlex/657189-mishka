@@ -32,11 +32,13 @@
       </nav>
     </header>
     <main class="page-main">
-      <header class="page-header">Каталог товаров</header>
+      <header class="page-header">
+      <h1 class="page-header__title">Каталог товаров</h1>
+      </header>
       <section class="catalog-items">
         <ul class="catalog-items__list catalog-assortment">
           <li class="catalog-assortment__item good">
-            <h3 class="good__title">Зайчик-попрыгайчик</h3>
+            <h2 class="good__title">Зайчик-попрыгайчик</h2>
             <a class="good__image" href=""><img src="#" width="260" height="195" alt="Изображение товара:кролик"></a>
             <p class="good__description">Рост 30 см, вес 200 г</p>
             <p class="good__price">
@@ -47,8 +49,8 @@
             </p>
           </li>
           <li class="catalog-assortment__item good">
-            <h3 class="good__title">Корзинка для белья</h3>
-            <a class="good__image" href=""><img src="#" width="260" height="195" alt="Изображение товара:кролик"></a>
+            <h2 class="good__title">Корзинка для белья</h2>
+            <a class="good__image" href=""><img src="#" width="260" height="195" alt="Изображение товара:корзина"></a>
             <p class="good__description">Диаметр 15 см, высота 10 см</p>
             <p class="good__price">
               <span class="good__price-description">690 руб.</span>
@@ -58,8 +60,8 @@
             </p>
           </li>
           <li class="catalog-assortment__item good">
-            <h3 class="good__title">Большая корзинка для игрушек</h3>
-            <a class="good__image" href=""><img src="#" width="260" height="195" alt="Изображение товара:кролик"></a>
+            <h2 class="good__title">Большая корзинка для игрушек</h2>
+            <a class="good__image" href=""><img src="#" width="260" height="195" alt="Изображение товара:корзина для игрушек"></a>
             <p class="good__description">Диаметр 30 см, высота 30 см</p>
             <p class="good__price">
               <span class="good__price-description">1 500 руб.</span>
@@ -70,17 +72,20 @@
           </li>
         </ul>
       </section>
-      <section class="creating-video">
-        <h3 class="video__title">Процесс производствка</h3>
+      <div class="creating-video">
+        <h2 class="video__title">Процесс производствка</h2>
         <video class="video__media catalog-video" poster="#" width="260" height="150">
-          <button class="catalog-video__btn">Запустить видео</button>
+          <source src="#" type="video/mp4">
+          <source src="#" type="video/ogg">
+          <source src="#" type="video/webm">
         </video>
+        <button class="creating-video__btn--start">Запустить видео</button>
         <p class="creating-video__description">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
           как появляются наши товары.
         </p>
         <a class="creating-video__btn btn" href="#modal-form">Сделать заказ</a>
-      </section>
+      </div>
     </main>
     <footer class="main-footer">
       <ul class="main-footer__social social-list">
@@ -102,16 +107,16 @@
         <p class="modal-add-item__size-title">Выберите размер:</p>
         <ul class="modal-add-item__select select-list">
           <li class="select-list__item size-list">
-            <label class="size-list__label" for="s-size-add">S</label>
             <input class="size-list__radio" type="radio" name="size-radio" value="size-S" id="s-size-add" checked>
+            <label class="size-list__label" for="s-size-add">S</label>
           </li>
           <li class="select-list__item">
-            <label class="size-list__label" for="m-size-add">M</label>
             <input class="size-list__radio" type="radio" name="size-radio" value="size-M" id="m-size-add">
+            <label class="size-list__label" for="m-size-add">M</label>
           </li>
           <li class="select-list__item">
-            <label class="size-list__label" for="s-size-add">L</label>
             <input class="size-list__radio" type="radio" name="size-radio" value="size-L" id="l-size-add">
+            <label class="size-list__label" for="s-size-add">L</label>
           </li>
         </ul>
         <button class="modal-add-item__btn btn" form="size-form" type="submit">Добавить</button>
