@@ -19,10 +19,12 @@
             <li class="header-list__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
-            <li class="header-list__item">
+          </ul>
+          <ul class="user-nav header-list">
+            <li class="header-list__item user-nav__item">
               <a href="">Поиск по сайту</a>
             </li>
-            <li class="header-list__item">
+            <li class="header-list__item user-nav__item">
               <a href="">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -30,9 +32,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <header class="page-header">
-        <h1 class="page-header__title">Каталог товаров</h1>
-      </header>
+      <header class="page-header">Каталог товаров</header>
       <section class="catalog-items">
         <ul class="catalog-items__list catalog-assortment">
           <li class="catalog-assortment__item good">
@@ -68,16 +68,18 @@
               </a>
             </p>
           </li>
-          <li class="catalog-assortment__creating-video video">
-            <h3 class="video__title">Процесс производствка</h3>
-            <video class="video__media" width="260" height="150"></video>
-            <p class="video__description">
-              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-             как появляются наши товары.
-           </p>
-           <a class="video__btn btn" href="#modal-form">Сделать заказ</a>
-          </li>
         </ul>
+      </section>
+      <section class="creating-video">
+        <h3 class="video__title">Процесс производствка</h3>
+        <video class="video__media catalog-video" poster="#" width="260" height="150">
+          <button class="catalog-video__btn">Запустить видео</button>
+        </video>
+        <p class="creating-video__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+          как появляются наши товары.
+        </p>
+        <a class="creating-video__btn btn" href="#modal-form">Сделать заказ</a>
       </section>
     </main>
     <footer class="main-footer">
@@ -95,14 +97,25 @@
     </footer>
     <div class="overlay">
       <section class="modal-add-item">
+        <form class="modal-add-item__form" id="size-form" method="get" action="https://echo.htmlacademy.ru">
         <h2 class="modal-add-item__title">Добавить в корзину</h2>
         <p class="modal-add-item__size-title">Выберите размер:</p>
         <ul class="modal-add-item__select select-list">
-          <li class="select-list__item active">S</li>
-          <li class="select-list__item">M</li>
-          <li class="select-list__item">L</li>
+          <li class="select-list__item size-list">
+            <label class="size-list__label" for="s-size-add">S</label>
+            <input class="size-list__radio" type="radio" name="size-radio" value="size-S" id="s-size-add" checked>
+          </li>
+          <li class="select-list__item">
+            <label class="size-list__label" for="m-size-add">M</label>
+            <input class="size-list__radio" type="radio" name="size-radio" value="size-M" id="m-size-add">
+          </li>
+          <li class="select-list__item">
+            <label class="size-list__label" for="s-size-add">L</label>
+            <input class="size-list__radio" type="radio" name="size-radio" value="size-L" id="l-size-add">
+          </li>
         </ul>
-        <button class="modal-add-item__btn btn">Добавить</button>
+        <button class="modal-add-item__btn btn" form="size-form" type="submit">Добавить</button>
+        </form>
       </section>
     </div>
   </body>

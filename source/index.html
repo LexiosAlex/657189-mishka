@@ -19,10 +19,12 @@
             <li class="header-list__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
-            <li class="header-list__item">
+          </ul>
+          <ul class="user-nav header-list">
+            <li class="header-list__item user-nav__item">
               <a href="">Поиск по сайту</a>
             </li>
-            <li class="header-list__item">
+            <li class="header-list__item user-nav__item">
               <a href="">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -30,9 +32,10 @@
       </nav>
     </header>
     <main  class="page-main">
-      <h1 class="visually-hidden">Основное содержание главной страницы</h1>
+      <h1 class="visually-hidden">Магазин вязаных игрушек ручной работы</h1>
       <section class="shop-description">
-        <h2 class="shop-description__title">Милые штуки ручной работы для дома</h2>
+        <h2 class="visually-hidden">Наши основные направления</h2>
+        <b class="shop-description__info">Милые штуки ручной работы для дома</b>
         <ul class="shop-description__services services-list">
           <li class="services-list__item">Предметы интерьера</li>
           <li class="services-list__item">Детские игрушки</li>
@@ -148,14 +151,25 @@
     </footer>
     <div class="overlay">
       <section class="modal-add-item">
+        <form class="modal-add-item__form" id="size-form" method="get" action="https://echo.htmlacademy.ru">
         <h2 class="modal-add-item__title">Добавить в корзину</h2>
         <p class="modal-add-item__size-title">Выберите размер:</p>
         <ul class="modal-add-item__select select-list">
-          <li class="select-list__item active">S</li>
-          <li class="select-list__item">M</li>
-          <li class="select-list__item">L</li>
+          <li class="select-list__item size-list">
+            <label class="size-list__label" for="s-size-add">S</label>
+            <input class="size-list__radio" type="radio" name="size-radio" value="size-S" id="s-size-add" checked>
+          </li>
+          <li class="select-list__item">
+            <label class="size-list__label" for="m-size-add">M</label>
+            <input class="size-list__radio" type="radio" name="size-radio" value="size-M" id="m-size-add">
+          </li>
+          <li class="select-list__item">
+            <label class="size-list__label" for="s-size-add">L</label>
+            <input class="size-list__radio" type="radio" name="size-radio" value="size-L" id="l-size-add">
+          </li>
         </ul>
-        <button class="modal-add-item__btn btn">Добавить</button>
+        <button class="modal-add-item__btn btn" form="size-form" type="submit">Добавить</button>
+        </form>
       </section>
     </div>
   </body>

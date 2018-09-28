@@ -19,10 +19,12 @@
             <li class="header-list__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
-            <li class="header-list__item">
+          </ul>
+          <ul class="user-nav header-list">
+            <li class="header-list__item user-nav__item">
               <a href="">Поиск по сайту</a>
             </li>
-            <li class="header-list__item">
+            <li class="header-list__item user-nav__item">
               <a href="">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -30,9 +32,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <header class="page-header">
-        <h1 class="page-header__title">Вязание на заказ</h1>
-      </header>
+      <header class="page-header">Вязание на заказ</header>
     <form class="formn-sorting" method="post" id="delivery-form" action="https://echo.htmlacademy.ru">
       <p class="formn-sorting__description">
         Мы будем рады воплотить в жизнь ваши пожелания!
@@ -100,12 +100,12 @@
       <fieldset class="formn-sorting__fieldset order-fieldset">
       <legend class="order-fieldset__legend">ТЕЛ</legend>
             <label class="field-label visually-hidden" for="customer-phone">Телефон</label>
-            <input type="text" name="phone-number" id="customer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <input type="phone" name="phone-number" id="customer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
       </fieldset>
       <fieldset>
       <legend class="order-fieldset__legend">E-MAIL</legend>
             <label class="field-label visually-hidden" for="customer-email">Электронная почта</label>
-            <input type="text" name="email" id="customer-email" placeholder="Ваш Email*">
+            <input type="email" name="email" id="customer-email" placeholder="Ваш Email*">
       </fieldset>
       <fieldset>
       <legend class="order-fieldset__legend">Доп</legend>
