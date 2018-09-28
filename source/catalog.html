@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="index.html" class="main-header__logo">
+        <img class="main-header__logo-image" src="#" width="86" height="35" alt="Магазин &laquo;Мишка&raquo;">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list header-list">
+            <li class="header-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="header-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="header-list__item">
+              <a href="">Поиск по сайту</a>
+            </li>
+            <li class="header-list__item">
+              <a href="">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <header class="page-header">
+        <h1 class="page-header__title">Каталог товаров</h1>
+      </header>
+      <section class="catalog-items">
+        <ul class="catalog-items__list catalog-assortment">
+          <li class="catalog-assortment__item good">
+            <h3 class="good__title">Зайчик-попрыгайчик</h3>
+            <a class="good__image" href=""><img src="#" width="260" height="195" alt="Изображение товара:кролик"></a>
+            <p class="good__description">Рост 30 см, вес 200 г</p>
+            <p class="good__price">
+              <span class="good__price-description">1 200 руб.</span>
+              <a class="good__price-cart" href="#modal-form">
+                <span class="visually-hidden">В корзину</span>
+              </a>
+            </p>
+          </li>
+          <li class="catalog-assortment__item good">
+            <h3 class="good__title">Корзинка для белья</h3>
+            <a class="good__image" href=""><img src="#" width="260" height="195" alt="Изображение товара:кролик"></a>
+            <p class="good__description">Диаметр 15 см, высота 10 см</p>
+            <p class="good__price">
+              <span class="good__price-description">690 руб.</span>
+              <a class="good__price-cart" href="#modal-form">
+                <span class="visually-hidden">В корзину</span>
+              </a>
+            </p>
+          </li>
+          <li class="catalog-assortment__item good">
+            <h3 class="good__title">Большая корзинка для игрушек</h3>
+            <a class="good__image" href=""><img src="#" width="260" height="195" alt="Изображение товара:кролик"></a>
+            <p class="good__description">Диаметр 30 см, высота 30 см</p>
+            <p class="good__price">
+              <span class="good__price-description">1 500 руб.</span>
+              <a class="good__price-cart" href="#modal-form">
+                <span class="visually-hidden">В корзину</span>
+              </a>
+            </p>
+          </li>
+          <li class="catalog-assortment__creating-video video">
+            <h3 class="video__title">Процесс производствка</h3>
+            <video class="video__media" width="260" height="150"></video>
+            <p class="video__description">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+             как появляются наши товары.
+           </p>
+           <a class="video__btn btn" href="#modal-form">Сделать заказ</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <ul class="main-footer__social social-list">
+        <li class="social-list__item"><a class="visually-hidden" href="">Instagram</a></li>
+        <li class="social-list__item"><a class="visually-hidden" href="">Facebook</a></li>
+        <li class="social-list__item"><a class="visually-hidden" href="">Twitter</a></li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <p class="copyrgiht__creator">Разработано</p>
+        <a class="copyright__logo" href="">
+          <img class="copyright__logo-image" src="#" width="27" height="34" alt="Html-academy">
+        </a>
+      </div>
+    </footer>
+    <div class="overlay">
+      <section class="modal-add-item">
+        <h2 class="modal-add-item__title">Добавить в корзину</h2>
+        <p class="modal-add-item__size-title">Выберите размер:</p>
+        <ul class="modal-add-item__select select-list">
+          <li class="select-list__item active">S</li>
+          <li class="select-list__item">M</li>
+          <li class="select-list__item">L</li>
+        </ul>
+        <button class="modal-add-item__btn btn">Добавить</button>
+      </section>
+    </div>
+  </body>
+</html>
