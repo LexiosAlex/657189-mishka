@@ -12,19 +12,19 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list header-list">
-            <li class="header-list__item">
+          <ul class="main-nav__list site-nav">
+            <li class="site-nav__item">
               <a href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="header-list__item">
+            <li class="site-nav__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="user-nav header-list">
-            <li class="header-list__item user-nav__item">
+          <ul class="main-nav__list user-nav">
+            <li class="user-nav__item">
               <a href="">Поиск по сайту</a>
             </li>
-            <li class="header-list__item user-nav__item">
+            <li class="user-nav__item">
               <a href="">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -33,17 +33,17 @@
     </header>
     <main  class="page-main">
       <h1 class="visually-hidden">Магазин вязаных игрушек ручной работы</h1>
-      <section class="shop-description">
+      <section class="directions">
         <h2 class="visually-hidden">Наши основные направления</h2>
-        <b class="shop-description__info">Милые штуки ручной работы для дома</b>
-        <ul class="shop-description__services services-list">
-          <li class="services-list__item">Предметы интерьера</li>
-          <li class="services-list__item">Детские игрушки</li>
+        <b class="directions__info">Милые штуки ручной работы для дома</b>
+        <ul class="directions__services directions__list">
+          <li class="directions__item">Предметы интерьера</li>
+          <li class="directions__item">Детские игрушки</li>
         </ul>
       </section>
       <section class="weekly-goods">
-          <h2 class="weekly-goods__header">Товар недели</h2>
-          <h3 class="weekly-goods__header--good">Вязаные корзинки</h3>
+          <h2 class="weekly-goods__title">Товар недели</h2>
+          <h3 class="weekly-goods__subtitle">Вязаные корзинки</h3>
           <p class="weekly-goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="weekly-goods__specifications">
             <tr>
@@ -73,17 +73,17 @@
           </table>
           <img class="weekly-goods__image" src="#" width="260" height="315" alt="Товар недели: корзинка">
           <p class="weekly-goods__price">Цена: 990 руб.</p>
-          <a class="weekly-goods_btn btn" href="">Заказать</a>
+          <a class="weekly-goods__btn btn" href="">Заказать</a>
       </section>
       <section class="advantages">
         <h2 class="advantages__title">Коротко о нас:</h2>
-        <ul class="advantages__list advantages-about">
-          <li class="advantages-about__item">Экологически чистые материалы</li>
-          <li class="advantages-about__item">Скандинавский стиль по российской цене</li>
-          <li class="advantages-about__item">Увеличивает лайки на фотографиях</li>
-          <li class="advantages-about__item">Связано вручную с любовью и умилением</li>
-          <li class="advantages-about__item">Поддержка отечественного производителя</li>
-          <li class="advantages-about__item">Поставляется в подарочной упаковке</li>
+        <ul class="advantages__list">
+          <li class="advantages__item">Экологически чистые материалы</li>
+          <li class="advantages__item">Скандинавский стиль по российской цене</li>
+          <li class="advantages__item">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item">Поддержка отечественного производителя</li>
+          <li class="advantages__item">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
       <section class="reviews">
@@ -91,7 +91,7 @@
           <h2 class="reviews__title">Отзывы</h2>
           <div class="rewiews__list slider__list">
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author">Анастасия Красильникова <span class="reviews__author--email">@misssssiskras</span></cite>
+              <cite class="reviews__author">Анастасия Красильникова <span class="reviews__author reviews__author--nickname">@misssssiskras</span></cite>
               <p class="rewiews__text">
                 Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
                 как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -154,16 +154,16 @@
         <form class="modal-add-item__form" id="size-form" method="get" action="https://echo.htmlacademy.ru">
         <h2 class="modal-add-item__title">Добавить в корзину</h2>
         <p class="modal-add-item__size-title">Выберите размер:</p>
-        <ul class="modal-add-item__select select-list">
-          <li class="select-list__item size-list">
+        <ul class="modal-add-item__select">
+          <li class="modal-add-item__item size-list">
             <input class="size-list__radio" type="radio" name="size-radio" value="size-S" id="s-size-add" checked>
             <label class="size-list__label" for="s-size-add">S</label>
           </li>
-          <li class="select-list__item">
+          <li class="modal-add-item__item">
             <input class="size-list__radio" type="radio" name="size-radio" value="size-M" id="m-size-add">
             <label class="size-list__label" for="m-size-add">M</label>
           </li>
-          <li class="select-list__item">
+          <li class="smodal-add-item__item">
             <input class="size-list__radio" type="radio" name="size-radio" value="size-L" id="l-size-add">
             <label class="size-list__label" for="s-size-add">L</label>
           </li>

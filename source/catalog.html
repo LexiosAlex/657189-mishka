@@ -6,25 +6,25 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html" class="main-header__logo">
+      <a src="index.html" class="main-header__logo">
         <img class="main-header__logo-image" src="#" width="86" height="35" alt="Магазин &laquo;Мишка&raquo;">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list header-list">
-            <li class="header-list__item">
+          <ul class="main-nav__list site-nav">
+            <li class="site-nav__item">
               <a href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="header-list__item">
+            <li class="site-nav__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="user-nav header-list">
-            <li class="header-list__item user-nav__item">
+          <ul class="main-nav__list user-nav">
+            <li class="user-nav__item">
               <a href="">Поиск по сайту</a>
             </li>
-            <li class="header-list__item user-nav__item">
+            <li class="user-nav__item">
               <a href="">Корзина: пока пуста</a>
             </li>
           </ul>
@@ -41,9 +41,9 @@
             <h2 class="good__title">Зайчик-попрыгайчик</h2>
             <a class="good__image" href=""><img src="#" width="260" height="195" alt="Изображение товара:кролик"></a>
             <p class="good__description">Рост 30 см, вес 200 г</p>
-            <p class="good__price">
-              <span class="good__price-description">1 200 руб.</span>
-              <a class="good__price-cart" href="#modal-form">
+            <p class="good__bottom">
+              <span class="good__price">1 200 руб.</span>
+              <a class="good__cart" href="#modal-form">
                 <span class="visually-hidden">В корзину</span>
               </a>
             </p>
@@ -52,9 +52,9 @@
             <h2 class="good__title">Корзинка для белья</h2>
             <a class="good__image" href=""><img src="#" width="260" height="195" alt="Изображение товара:корзина"></a>
             <p class="good__description">Диаметр 15 см, высота 10 см</p>
-            <p class="good__price">
-              <span class="good__price-description">690 руб.</span>
-              <a class="good__price-cart" href="#modal-form">
+            <p class="good__bottom">
+              <span class="good__price">690 руб.</span>
+              <a class="good__cart" href="#modal-form">
                 <span class="visually-hidden">В корзину</span>
               </a>
             </p>
@@ -63,35 +63,37 @@
             <h2 class="good__title">Большая корзинка для игрушек</h2>
             <a class="good__image" href=""><img src="#" width="260" height="195" alt="Изображение товара:корзина для игрушек"></a>
             <p class="good__description">Диаметр 30 см, высота 30 см</p>
-            <p class="good__price">
-              <span class="good__price-description">1 500 руб.</span>
-              <a class="good__price-cart" href="#modal-form">
+            <p class="good__bottom">
+              <span class="good__price">1 500 руб.</span>
+              <a class="good__cart" href="#modal-form">
                 <span class="visually-hidden">В корзину</span>
               </a>
             </p>
           </li>
         </ul>
       </section>
-      <div class="creating-video">
-        <h2 class="video__title">Процесс производствка</h2>
-        <video class="video__media catalog-video" poster="#" width="260" height="150">
-          <source src="#" type="video/mp4">
-          <source src="#" type="video/ogg">
-          <source src="#" type="video/webm">
-        </video>
-        <button class="creating-video__btn--start">Запустить видео</button>
-        <p class="creating-video__description">
+      <section class="production">
+        <h2 class="production__title">Процесс производствка</h2>
+        <div class="production__container">
+            <video class="production__media catalog-video" poster="#" width="260" height="150">
+              <source src="#" type="video/mp4">
+              <source src="#" type="video/ogg">
+              <source src="#" type="video/webm">
+            </video>
+          <button class="production__btn--start">Запустить видео</button>
+        </div>
+        <p class="production__description">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
           как появляются наши товары.
         </p>
-        <a class="creating-video__btn btn" href="#modal-form">Сделать заказ</a>
-      </div>
+        <a class="production__btn btn" href="#modal-form">Сделать заказ</a>
+      </section>
     </main>
     <footer class="main-footer">
       <ul class="main-footer__social social-list">
-        <li class="social-list__item"><a class="visually-hidden" href="">Instagram</a></li>
-        <li class="social-list__item"><a class="visually-hidden" href="">Facebook</a></li>
-        <li class="social-list__item"><a class="visually-hidden" href="">Twitter</a></li>
+        <li class="social-list__item social-list__item--insta"><a class="visually-hidden" href="">Instagram</a></li>
+        <li class="social-list__item social-list__item--fb"><a class="visually-hidden" href="">Facebook</a></li>
+        <li class="social-list__item social-list__item--Twit"><a class="visually-hidden" href="">Twitter</a></li>
       </ul>
       <div class="main-footer__copyright copyright">
         <p class="copyrgiht__creator">Разработано</p>
@@ -105,16 +107,16 @@
         <form class="modal-add-item__form" id="size-form" method="get" action="https://echo.htmlacademy.ru">
         <h2 class="modal-add-item__title">Добавить в корзину</h2>
         <p class="modal-add-item__size-title">Выберите размер:</p>
-        <ul class="modal-add-item__select select-list">
-          <li class="select-list__item size-list">
+        <ul class="modal-add-item__select">
+          <li class="modal-add-item__item size-list">
             <input class="size-list__radio" type="radio" name="size-radio" value="size-S" id="s-size-add" checked>
             <label class="size-list__label" for="s-size-add">S</label>
           </li>
-          <li class="select-list__item">
+          <li class="modal-add-item__item">
             <input class="size-list__radio" type="radio" name="size-radio" value="size-M" id="m-size-add">
             <label class="size-list__label" for="m-size-add">M</label>
           </li>
-          <li class="select-list__item">
+          <li class="modal-add-item__item">
             <input class="size-list__radio" type="radio" name="size-radio" value="size-L" id="l-size-add">
             <label class="size-list__label" for="s-size-add">L</label>
           </li>
