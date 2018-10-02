@@ -1,0 +1,11 @@
+.directions__item{
+  padding: 30px 0px;
+  background-color: $theme-color;
+  span {
+    display: block;
+    width: 106px;
+  }
+  &:nth-child(2){
+  background-color: $darken-theme-color;
+  }
+}
