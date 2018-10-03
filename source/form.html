@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <a href="index.html" class="main-header__logo">
-        <img class="main-header__logo-image" src="#" width="86" height="35" alt="Магазин &laquo;Мишка&raquo;">
+        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;Мишка&raquo;">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -104,12 +105,12 @@
               <label class="field-label visually-hidden" for="customer-phone">Телефон</label>
               <input type="tel" name="phone-number" id="customer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </fieldset>
-        <fieldset>
+        <fieldset class="formn-sorting__fieldset order-fieldset">
         <legend class="order-fieldset__legend">E-MAIL</legend>
               <label class="field-label visually-hidden" for="customer-email">Электронная почта</label>
               <input type="email" name="email" id="customer-email" placeholder="Ваш Email*">
         </fieldset>
-        <fieldset>
+        <fieldset class="formn-sorting__fieldset order-fieldset">
         <legend class="order-fieldset__legend">Доп</legend>
               <label class="field-label visually-hidden" for="customer-comment">Комментарий к заказу</label>
               <textarea name="comment" id="customer-comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -127,7 +128,7 @@
       <div class="main-footer__copyright copyright">
         <p class="copyrgiht__creator">Разработано</p>
         <a class="copyright__logo" href="">
-          <img class="copyright__logo-image" src="#" width="27" height="34" alt="Html-academy">
+          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="Html-academy">
         </a>
       </div>
     </footer>
