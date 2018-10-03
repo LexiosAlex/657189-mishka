@@ -1,0 +1,47 @@
+.weekly-goods__title{
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: $font-bold;
+  line-height: 30px;
+}
+
+.weekly-goods__subtitle {
+  color: $theme-color;
+  font-size: 17px;
+  font-weight: $font-bold;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.weekly-goods__description{
+  color: $loghten-font;
+  font-size: 15px;
+  font-weight: $font-normal;
+  line-height: 20px;
+  width: 249px;
+}
+
+.weekly-goods__specifications{
+  color: $loghten-font;
+  font-size: 15px;
+  font-weight: $font-normal;
+  line-height: 20px;
+}
+
+.weekly-goods__value {
+  display: block;
+  padding-left: 30px;
+}
+
+.weekly-goods__price{
+  color: $loghten-font;
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: $font-bold;
+  line-height: 24px;
+}
+
+.weekly-goods__btn {
+    margin-top: 16px;
+    margin-bottom:0px;
+}

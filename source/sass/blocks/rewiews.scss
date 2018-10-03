@@ -1,0 +1,36 @@
+.reviews__title {
+  margin-top: 60px;
+  color: $main-font-color;
+  font-size: 25px;
+  font-weight: $font-bold;
+  line-height: 30px;
+}
+
+.reviews__item {
+  margin: 0px;
+  padding: 0px;
+}
+
+.reviews__author {
+  font-style: normal;
+  display: inline-block;
+  order: 1;
+  width: 241px;
+  color: $main-font-color;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: $font-bold;
+  span {
+  color: $loghten-font;
+  font-weight: $font-normal;
+  line-height: 30px;
+  }
+}
+
+.rewiews__text {
+  width: 260px;
+  color: $loghten-font;
+  font-size: 15px;
+  font-weight: $font-normal;
+  line-height: 30px;
+}
