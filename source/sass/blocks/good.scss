@@ -1,0 +1,24 @@
+.good {
+  margin-top: 30px;
+}
+
+.good__title {
+  color: $main-font-color;
+  font-size: 17px;
+  font-weight: $font-bold;
+  line-height: 24px;
+}
+
+.good__description{
+  color: $loghten-font;
+  font-size: 17px;
+  font-weight: $font-normal;
+  line-height: 24px;
+}
+
+.good__bottom {
+  color: $main-font-color;
+  font-size: 15px;
+  font-weight: $font-bold;
+  line-height: 24px;
+}

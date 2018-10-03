@@ -1,0 +1,13 @@
+@mixin container {
+
+}
+
+@mixin fieldset-styling{
+  border: none;
+}
+
+@mixin list-styling {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}

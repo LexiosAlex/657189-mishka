@@ -1,8 +1,9 @@
 @import "normalize.scss";
 @import "font-stack.scss";
 @import "colors.scss";
+@import "mixins.scss";
 @import "blocks/body.scss";
-@import "visually-hidden";
+@import "visually-hidden.scss";
 @import "blocks/btn.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-header__logo.scss";
@@ -14,5 +15,11 @@
 @import "blocks/advantages.scss";
 @import "blocks/rewiews.scss";
 @import "blocks/contacts.scss";
+@import "blocks/page-header.scss";
+@import "blocks/catalog-items.scss";
+@import "blocks/good.scss";
+@import "blocks/production.scss";
+@import "blocks/form-sorting.scss";
+@import "blocks/order-fieldset.scss";
 @import "blocks/main-footer.scss";
 @import "blocks/copyright__creator.scss";

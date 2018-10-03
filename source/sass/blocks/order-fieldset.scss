@@ -1,0 +1,27 @@
+.order-fieldset {
+  border-top: 1px solid $theme-color;
+}
+
+.order-fieldset__legend {
+  color: $theme-color;
+  font-size: 17px;
+  font-weight: $font-bold;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.order-fieldset__list {
+  @include list-styling;
+}
+
+.order-fieldset__item {
+  padding-top:24px;
+  padding-bottom:24px;
+}
+
+.field-label {
+  color: $main-font-color;
+  font-size: 17px;
+  font-weight: $font-bold;
+  line-height: 18px;
+}

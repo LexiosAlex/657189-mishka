@@ -1,0 +1,11 @@
+.form-sorting__description{
+  width: 242px;
+  color: $loghten-font;
+  font-size: 13px;
+  font-weight: $font-normal;
+  line-height: 24px;
+}
+
+.formn-sorting__fieldset {
+  @include fieldset-styling;
+}
