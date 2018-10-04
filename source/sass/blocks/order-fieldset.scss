@@ -11,7 +11,7 @@
 }
 
 .order-fieldset__list {
-  @include list-styling;
+  @include list-unstyling;
 }
 
 .order-fieldset__item {

@@ -2,14 +2,12 @@
 @import "font-stack.scss";
 @import "colors.scss";
 @import "mixins.scss";
-@import "blocks/body.scss";
-@import "visually-hidden.scss";
+@import "global.scss";
 @import "blocks/btn.scss";
 @import "blocks/main-header.scss";
-@import "blocks/main-header__logo.scss";
-@import "blocks/main-nav__list.scss";
-@import "blocks/site-nav__item.scss";
-@import "blocks/user-nav__item.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-nav.scss";
+@import "blocks/user-nav.scss";
 @import "blocks/directions.scss";
 @import "blocks/weekly-goods.scss";
 @import "blocks/advantages.scss";
@@ -22,4 +20,4 @@
 @import "blocks/form-sorting.scss";
 @import "blocks/order-fieldset.scss";
 @import "blocks/main-footer.scss";
-@import "blocks/copyright__creator.scss";
+@import "blocks/copyright.scss";

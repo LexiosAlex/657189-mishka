@@ -18,8 +18,7 @@
 }
 
 .directions__list {
-  margin: 0px;
-  padding: 0px;
+  @include list-unstyling;
   margin-top: 120px;
   list-style: none;
   font-size: 19px;
