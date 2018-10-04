@@ -9,3 +9,9 @@
 .formn-sorting__fieldset {
   @include fieldset-unstyling;
 }
+.form-sorting__important-inputs{
+  color: $loghten-font;
+  font-size: 14px;
+  font-weight: $font-normal;
+  line-height: 16px;
+}

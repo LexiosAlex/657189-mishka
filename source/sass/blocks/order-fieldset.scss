@@ -1,5 +1,5 @@
 .order-fieldset {
-  border-top: 1px solid $theme-color;
+
 }
 
 .order-fieldset__legend {
@@ -25,3 +25,14 @@
   font-weight: $font-bold;
   line-height: 18px;
 }
+
+.order-fieldset{
+  input, textarea{
+    border: none;
+    border-bottom: 2px solid $main-font-color;
+    &:hover, &:focus, &:active{
+      border-bottom: 2px solid $theme-color;
+    }
+  }
+}
+

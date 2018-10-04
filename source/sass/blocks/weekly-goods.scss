@@ -26,6 +26,11 @@
   font-size: 15px;
   font-weight: $font-normal;
   line-height: 20px;
+  td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 .weekly-goods__value {

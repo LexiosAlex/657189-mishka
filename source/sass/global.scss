@@ -3,6 +3,10 @@ body {
   background-color: $primary-color;
 }
 
+a {
+  cursor: pointer;
+}
+
 .visually-hidden {
     position: absolute;
 

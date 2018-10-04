@@ -12,10 +12,12 @@
   &:hover, &:focus{
    background-color: $loghten-font;
    color: $primary-color;
+   border: 2px solid $loghten-font;
   };
   &:active{
     background-color: $loghten-font;
     color: $btn-active-color;
+    border: 2px solid $loghten-font;
   }
 
 }

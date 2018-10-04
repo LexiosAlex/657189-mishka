@@ -1,0 +1,30 @@
+.modal-add-item {
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
+}
+
+.modal-add-item__title {
+  color: $main-font-color;
+  font-size: 25px;
+  font-weight: $font-bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.modal-add-item__size-title {
+  color: $loghten-font;
+  font-size: 15px;
+  font-weight: $font-normal;
+  line-height: 30px;
+}
+
+.modal-add-item__select {
+  @include list-unstyling;
+}
+
+.modal-add-item__btn {
+  background-color: $theme-color;
+  border: 2px solid $theme-color;
+  color: $primary-color;
+}
+
