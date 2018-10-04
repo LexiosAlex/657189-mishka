@@ -1,16 +1,16 @@
 .weekly-goods__title{
-  padding-top: 20px;
-  font-size: 25px;
-  font-weight: $font-bold;
-  line-height: 30px;
-}
-
-.weekly-goods__subtitle {
   color: $theme-color;
   font-size: 17px;
   font-weight: $font-bold;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.weekly-goods__subtitle {
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: $font-bold;
+  line-height: 30px;
 }
 
 .weekly-goods__description{
@@ -40,7 +40,6 @@
 
 .weekly-goods__price{
   color: $loghten-font;
-  font-family: "Open Sans";
   font-size: 17px;
   font-weight: $font-bold;
   line-height: 24px;

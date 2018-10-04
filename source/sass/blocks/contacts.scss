@@ -19,3 +19,22 @@
   font-weight: $font-normal;
   line-height: 30px;
 }
+
+.contacts__email {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    width: 180px;
+    height: 1px;
+    background-color: $theme-color;
+  }
+  &:hover, &:focus {
+    color: $theme-color;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
