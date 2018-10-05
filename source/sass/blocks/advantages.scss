@@ -8,9 +8,7 @@
 }
 
 .advantages__list {
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
+  @include list-unstyling;
 }
 
 .advantages__item {
