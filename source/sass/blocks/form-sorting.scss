@@ -1,0 +1,18 @@
+.form-sorting__description {
+  width: 242px;
+  color: $loghten-font;
+  font-size: 13px;
+  font-weight: $font-normal;
+  line-height: 24px;
+}
+
+.formn-sorting__fieldset {
+  @include fieldset-unstyling;
+}
+
+.form-sorting__important-inputs {
+  color: $loghten-font;
+  font-size: 14px;
+  font-weight: $font-normal;
+  line-height: 16px;
+}

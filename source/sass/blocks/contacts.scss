@@ -1,0 +1,44 @@
+.contacts__title {
+  color: $main-font-color;
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 30px;
+}
+
+.contacts__field {
+  color: $loghten-font;
+  font-size: 15px;
+  font-weight: $font-normal;
+  line-height: 30px;
+}
+
+.contacts__value {
+  white-space: pre;
+  color: $loghten-font;
+  font-size: 15px;
+  font-weight: $font-normal;
+  line-height: 30px;
+}
+
+.contacts__email {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 180px;
+    height: 1px;
+    background-color: $theme-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $theme-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,33 @@
+.good {
+  border: 1px solid #ececec;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.good__title {
+  color: $main-font-color;
+  font-size: 17px;
+  font-weight: $font-bold;
+  line-height: 24px;
+}
+
+.good__description {
+  color: $loghten-font;
+  font-size: 17px;
+  font-weight: $font-normal;
+  line-height: 24px;
+}
+
+.good__bottom {
+  color: $main-font-color;
+  font-size: 15px;
+  font-weight: $font-bold;
+  line-height: 24px;
+}

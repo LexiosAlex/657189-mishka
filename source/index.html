@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="#" width="86" height="35" alt="Магазин &laquo;Мишка&raquo;">
+        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;Мишка&raquo;">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-nav">
             <li class="site-nav__item">
@@ -31,14 +32,22 @@
         </div>
       </nav>
     </header>
-    <main  class="page-main">
+    <main class="page-main">
       <h1 class="visually-hidden">Магазин вязаных игрушек ручной работы</h1>
       <section class="directions">
         <h2 class="visually-hidden">Наши основные направления</h2>
-        <b class="directions__info">Милые штуки ручной работы для дома</b>
+        <p class="directions__info">Милые штуки ручной работы для дома</p>
         <ul class="directions__list">
-          <li class="directions__item">Предметы интерьера</li>
-          <li class="directions__item">Детские игрушки</li>
+          <li class="directions__item">
+            <a class="directions__link">
+              <span>Предметы интерьера</span>
+            </a>
+          </li>
+          <li class="directions__item">
+            <a class="directions__link">
+              <span>Детские игрушки</span>
+            </a>
+          </li>
         </ul>
       </section>
       <section class="weekly-goods">
@@ -71,9 +80,9 @@
               </td>
             </tr>
           </table>
-          <img class="weekly-goods__image" src="#" width="260" height="315" alt="Товар недели: корзинка">
+          <img class="weekly-goods__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели: корзинка">
           <p class="weekly-goods__price">Цена: 990 руб.</p>
-          <a class="weekly-goods__btn btn" href="">Заказать</a>
+          <a class="btn weekly-goods__btn" href="">Заказать</a>
       </section>
       <section class="advantages">
         <h2 class="advantages__title">Коротко о нас:</h2>
@@ -104,7 +113,7 @@
               <button class="slider__toggle" type="button"><span class="visually-hidden">Слудующий отзыв</span></button>
           </p>
         </div>
-        <a class="reviews__btn btn" href="#">Написать</a>
+        <a class="btn reviews__btn" href="#">Написать</a>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
@@ -114,7 +123,7 @@
               e-mail:
             </td>
             <td class="contacts__value">
-              info@mimimishkashop.ru
+              <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </td>
           </tr>
           <tr>
@@ -130,7 +139,7 @@
         </table>
         <div class="contacts__map-container">
           <div class="contacts__map-api" id="map">
-              <img class="visually-hidden" src="#" width="322" height="457" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+              <img src="img/map-mobile@1x.jpg" width="322" height="457" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </div>
         </div>
         <a class="contacts__btn btn" href="">Напишите нам</a>
@@ -144,8 +153,8 @@
       </ul>
       <div class="main-footer__copyright copyright">
         <p class="copyrgiht__creator">Разработано</p>
-        <a class="copyright__logo" href="">
-          <img class="copyright__logo-image" src="#" width="27" height="34" alt="Html-academy">
+        <a class="copyright__logo" href="#">
+          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="Html-academy">
         </a>
       </div>
     </footer>
