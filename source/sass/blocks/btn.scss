@@ -10,9 +10,9 @@
   text-transform: uppercase;
   background-color: $primary-color;
   &:hover, &:focus{
-   background-color: $loghten-font;
-   color: $primary-color;
-   border: 2px solid $loghten-font;
+    background-color: $loghten-font;
+    color: $primary-color;
+    border: 2px solid $loghten-font;
   };
   &:active{
     background-color: $loghten-font;
