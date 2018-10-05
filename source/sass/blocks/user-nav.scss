@@ -1,15 +1,18 @@
 .user-nav__item {
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
   padding: 30px 45px;
+
   a {
-  text-decoration: none;
-  color: $main-font-color;
-  &:hover,
-  &:focus{
-    color: $link-hover-color;
+    text-decoration: none;
+    color: $main-font-color;
+
+    &:hover,
+    &:focus {
+      color: $link-hover-color;
+    }
+
+    &:active {
+      color: $link-active-color;
+    }
   }
-  &:active{
-    color: $link-active-color;
-  }
-}
 }

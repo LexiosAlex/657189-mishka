@@ -1,9 +1,12 @@
 .good {
   border: 1px solid #ececec;
-  &:hover, &:focus{
+
+  &:hover,
+  &:focus {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
-  &:active{
+
+  &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
@@ -15,7 +18,7 @@
   line-height: 24px;
 }
 
-.good__description{
+.good__description {
   color: $loghten-font;
   font-size: 17px;
   font-weight: $font-normal;

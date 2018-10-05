@@ -1,4 +1,4 @@
-.weekly-goods__title{
+.weekly-goods__title {
   color: $theme-color;
   font-size: 17px;
   font-weight: $font-bold;
@@ -13,7 +13,7 @@
   line-height: 30px;
 }
 
-.weekly-goods__description{
+.weekly-goods__description {
   color: $loghten-font;
   font-size: 15px;
   font-weight: $font-normal;
@@ -21,11 +21,12 @@
   width: 249px;
 }
 
-.weekly-goods__specifications{
+.weekly-goods__specifications {
   color: $loghten-font;
   font-size: 15px;
   font-weight: $font-normal;
   line-height: 20px;
+
   td {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -38,7 +39,7 @@
   padding-left: 30px;
 }
 
-.weekly-goods__price{
+.weekly-goods__price {
   color: $loghten-font;
   font-size: 17px;
   font-weight: $font-bold;
@@ -46,6 +47,6 @@
 }
 
 .weekly-goods__btn {
-    margin-top: 16px;
-    margin-bottom:0px;
+  margin-top: 16px;
+  margin-bottom: 0;
 }

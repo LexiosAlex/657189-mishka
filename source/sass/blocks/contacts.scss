@@ -22,18 +22,22 @@
 
 .contacts__email {
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     bottom: -5px;
     width: 180px;
     height: 1px;
     background-color: $theme-color;
   }
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     color: $theme-color;
   }
+
   &:active {
     opacity: 0.3;
   }

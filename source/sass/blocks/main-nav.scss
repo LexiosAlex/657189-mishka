@@ -1,11 +1,11 @@
-.main-nav{
-    background-color: $primary-color;
-    color: $main-font-color;
+.main-nav {
+  background-color: $primary-color;
+  color: $main-font-color;
 }
 
-.main-nav__list{
+.main-nav__list {
   @include list-unstyling;
   list-style: none;
-  font-weight: $main-font-color;
+  color: $main-font-color;
   font-weight: $font-bold;
 }

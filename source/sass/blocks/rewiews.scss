@@ -7,8 +7,8 @@
 }
 
 .reviews__item {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .reviews__author {
@@ -20,10 +20,11 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: $font-bold;
+
   span {
-  color: $loghten-font;
-  font-weight: $font-normal;
-  line-height: 30px;
+    color: $loghten-font;
+    font-weight: $font-normal;
+    line-height: 30px;
   }
 }
 
