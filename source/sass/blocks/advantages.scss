@@ -25,7 +25,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .advantages__title {
     color: $main-font-color;
     font-size: 43px;

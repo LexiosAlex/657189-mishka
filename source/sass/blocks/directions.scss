@@ -70,7 +70,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .directions{
     margin-top: 1px;
     background-image: url("../img/hero-tablet@1x.jpg");

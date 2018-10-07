@@ -24,8 +24,29 @@
 }
 
 
-@media (max-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .site-nav{
-    display: none;
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-nav__item{
+    width: 170px;
+    box-shadow: none;
+    border: 1px solid #ececec;
+    border-bottom: none;
+    border-top: none;
+
+    a {
+      color: $main-font-color;
+      font-size: 15px;
+      font-weight: $font-bold;
+      line-height: 24px;
+      display: inline-block;
+      width: 100%;
+      margin: 0;
+    }
   }
 }
