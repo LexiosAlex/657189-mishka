@@ -79,3 +79,16 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $desctop-width){
+  .user-nav{
+    margin-left: auto;
+    width: 320px;
+    order: 2;
+  }
+  .user-nav__search {
+    width: 82px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}

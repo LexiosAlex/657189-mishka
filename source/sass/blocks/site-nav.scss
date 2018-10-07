@@ -50,3 +50,9 @@
     }
   }
 }
+
+@media (min-width: $desctop-width){
+  .site-nav{
+    order: 1;
+  }
+}

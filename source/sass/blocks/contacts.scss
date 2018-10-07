@@ -50,6 +50,7 @@
   }
   .contacts__specifications{
     @include inside-container;
+    display: flex;
   }
   .contacts__field{
     vertical-align: top;
@@ -76,3 +77,19 @@
     width: 100%;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__specifications{
+    display: flex;
+    flex-direction: row;
+    }
+    .contacts__btn-container{
+      display: flex;
+    }
+    .contacts__btn{
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+

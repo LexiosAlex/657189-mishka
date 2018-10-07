@@ -62,6 +62,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -97,5 +98,21 @@
 
   .reviews__author{
     order: 4;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .reviews{
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .reviews__btn{
+    position: absolute;
+    top: 50px;
+    right: 50px;
   }
 }

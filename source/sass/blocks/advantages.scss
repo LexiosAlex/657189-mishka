@@ -27,9 +27,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages__title {
-    color: $main-font-color;
     font-size: 43px;
-    font-weight: $font-bold;
     line-height: 50px;
   }
 
@@ -64,5 +62,12 @@
     &:nth-child(6){
       order: 6;
     }
+  }
+}
+
+@media (min-width: $desctop-width){
+  .advantages__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

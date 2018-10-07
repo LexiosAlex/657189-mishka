@@ -159,3 +159,29 @@
     width: 50%;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .weekly-goods__header{
+    padding-left: 50px;
+    z-index: 1;
+  }
+  .weekly-goods__title {
+    display: inline-block;
+    padding-top: 10px;
+    margin: 0;
+    order: 2;
+    width: 70px;
+    text-align: center;
+  }
+  .weekly-goods__subtitle {
+    width: 530px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 58px;
+    order: 2;
+  }
+   .weekly-goods__main-container{
+    padding-left: 175px;
+  }
+
+}

@@ -89,10 +89,23 @@
     display: flex;
     flex-direction:row;
     flex-wrap:wrap;
-    width: 668px;
+    min-width: 668px;
   }
   .directions__item {
     display: flex;
     width: 50%;
+  }
+}
+@media (min-width: $tablet-width) {
+  .directions__info{
+    width: 630px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .directions__list {
+    min-width: 1050px;
+  }
+  .directions__item {
+    min-width: 525px;
   }
 }
