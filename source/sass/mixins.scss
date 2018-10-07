@@ -3,6 +3,10 @@
   height: auto;
 }
 
+@mixin inside-container{
+  padding: 0 30px;
+}
+
 @mixin fieldset-unstyling {
   padding: 0;
   margin: 0;

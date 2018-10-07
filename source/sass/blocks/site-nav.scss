@@ -1,10 +1,16 @@
 .site-nav__item {
-  padding: 30px 45px;
+  display: block;
+
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   a {
     text-decoration: none;
     color: $main-font-color;
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0;
 
     &:hover,
     &:focus {
@@ -14,5 +20,12 @@
     &:active {
       color: $link-active-color;
     }
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .site-nav{
+    display: none;
   }
 }

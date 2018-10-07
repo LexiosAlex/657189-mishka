@@ -28,10 +28,74 @@
   }
 }
 
-.rewiews__text {
+.reviews__text {
   width: 260px;
   color: $loghten-font;
   font-size: 15px;
   font-weight: $font-normal;
   line-height: 30px;
+}
+
+@media (min-width: $mobile-width) {
+  .reviews{
+    @include inside-container;
+  }
+
+  .reviews__item{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__text {
+    order: 2;
+    width: 260px;
+    color: $loghten-font;
+    font-size: 15px;
+    font-weight: $font-normal;
+    line-height: 30px;
+  }
+
+  .reviews__author{
+    order: 1;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .reviews{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .reviews__title{
+    order: 1;
+    color: $main-font-color;
+    font-size: 43px;
+    font-weight: $font-bold;
+    line-height: 50px;
+  }
+  .reviews__btn {
+    order: 2;
+    max-height: 52px;
+  }
+
+  .reviews__item{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__text {
+    order: 3;
+    width: 642px;
+    color: $loghten-font;
+    font-size: 17px;
+    font-weight: $font-normal;
+    line-height: 30px;
+  }
+
+  .reviews__author{
+    order: 4;
+  }
 }

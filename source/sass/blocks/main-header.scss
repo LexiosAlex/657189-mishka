@@ -6,6 +6,18 @@
 }
 
 .main-header__logo {
-  display: block;
-  box-shadow: 0 1px 0 #ececec;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-header__logo-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: $tablet-width){
+  .main-header{
+    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  }
 }

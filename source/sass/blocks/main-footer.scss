@@ -5,3 +5,9 @@
 .main-footer__social {
   @include list-unstyling;
 }
+
+@media (min-width: $mobile-width) {
+  .main-footer__container{
+    @include inside-container;
+  }
+}
