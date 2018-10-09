@@ -48,11 +48,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    @include inside-container;
+
   }
 
   .main-nav__list{
     display:flex;
+    flex-wrap: wrap;
   }
 
   .main-nav__toggle{
