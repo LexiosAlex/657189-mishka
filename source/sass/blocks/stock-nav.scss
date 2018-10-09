@@ -16,3 +16,8 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .stock-nav {
+    display: none;
+  }
+}

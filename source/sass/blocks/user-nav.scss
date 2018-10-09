@@ -77,6 +77,7 @@
     font-size: 15px;
     font-weight: $font-normal;
     line-height: 24px;
+    @include inside-container;
   }
 }
 

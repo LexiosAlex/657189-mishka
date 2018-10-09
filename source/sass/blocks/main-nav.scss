@@ -34,10 +34,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__stock {
-    display: none;
-  }
-
   .main-nav{
     max-width: 1150px;
     display: block;
@@ -69,11 +65,15 @@
     @include central-container;
   }
 
+  .main-nav__list{
+    @include inside-container;
+  }
+
   .main-nav__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    @include inside-container;
+    padding: 0;
   }
 
   .main-nav__stock {

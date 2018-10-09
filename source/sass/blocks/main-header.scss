@@ -28,6 +28,9 @@
 }
 
 @media (min-width: $tablet-width){
+  .main-header{
+    box-shadow: none;
+  }
   .main-header__logo {
     left: 30%;
   }
