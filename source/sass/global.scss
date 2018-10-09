@@ -1,10 +1,11 @@
-$mobile-width: 260px;
+$mobile-width: 360px;
 $tablet-width: 668px;
 $desctop-width: 1050px;
 
 body {
   font-family: $font-stack;
   background-color: $primary-color;
+  min-width: $mobile-width;
 }
 
 a {
