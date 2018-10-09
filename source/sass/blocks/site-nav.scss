@@ -26,8 +26,8 @@
 
 @media (min-width: $tablet-width) {
   .site-nav{
+    width: auto;
     order: 2;
-    width: 50%;
     display: flex;
     flex-grow: 1;
     flex-direction: row;
@@ -46,7 +46,7 @@
       font-weight: $font-bold;
       line-height: 24px;
       display: inline-block;
-      width: 80%;
+      width: 85%;
       margin: 0;
       &:nth-child(1){
         padding-left: 50px;
@@ -58,9 +58,10 @@
 @media (min-width: $desctop-width){
   .site-nav{
     order: 1;
+    width: 50%;
     border-bottom: 1px solid #ececec;
-    padding-right: 21%;
-    width: 30%;
+    padding-right: 17%;
+    width: 33%;
   }
 
   .site-nav__item{
