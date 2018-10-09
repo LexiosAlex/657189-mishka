@@ -136,10 +136,6 @@
     order: 1;
   }
 
-  .weekly-goods__image{
-    display: none;
-  }
-
  .weekly-goods__main-container{
     display: flex;
     flex-direction: row;
@@ -161,6 +157,10 @@
 }
 
 @media (min-width: $desctop-width) {
+  .weekly-goods{
+    max-width: 1050px;
+    @include central-container;
+  }
   .weekly-goods__header{
     padding-left: 50px;
     z-index: 1;
@@ -183,5 +183,8 @@
    .weekly-goods__main-container{
     padding-left: 175px;
   }
-
+  .weekly-goods__image{
+    // srcset: url(../img/triple-set-desktop@1x.jpg);
+  }
 }
+

@@ -1,5 +1,5 @@
 .main-nav {
-  posotion: relative;
+  position: relative;
   background-color: $primary-color;
   color: $main-font-color;
 }
@@ -34,37 +34,13 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .main-nav__stock {
     display: none;
   }
 
-  .main-nav__right-column{
-    max-width: 348px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    order: 2;
-  }
   .main-nav{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .main-nav__left-column{
-    max-width: 320px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    order: 1 ;
-  }
-
-  .main-nav__tablet-space{
-    height: 88px;
-    width: 100%;
-    border-bottom: 1px solid #ececec;
+    max-width: 1150px;
+    display: block;
   }
 
   .main-nav__toggle-contatainer{
@@ -72,10 +48,11 @@
   }
 
   .main-nav__wrapper{
-    width: 100%;
+    max-width: 1050px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    @include inside-container;
   }
 
   .main-nav__list{
@@ -88,26 +65,18 @@
 }
 
 @media (min-width: $desctop-width){
-  .main-nav__right-column{
-    max-width: 348px;
+  .main-nav{
+    @include central-container;
+  }
+
+  .main-nav__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    order: 2;
+    @include inside-container;
   }
 
-  .main-nav__left-column{
-    max-width: 700px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    order: 1 ;
-  }
-  .main-nav__tablet-space{
-    display: none;
-  }
-
-  .main-nav__stock{
+  .main-nav__stock {
     @include list-unstyling;
     display: flex;
   }

@@ -45,11 +45,12 @@
 }
 
 @media (min-width: $mobile-width) {
+  .contacts{
+    max-width: 1050px;
+  }
   .contacts__title{
-    @include inside-container;
   }
   .contacts__specifications{
-    @include inside-container;
     display: flex;
   }
   .contacts__field{
@@ -79,17 +80,46 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts{
+    @include central-container;
+    @include inside-container;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contacts__title{
+    padding: 0px;
+    font-size: 43px;
+    line-height: 50px;
+  }
   .contacts__specifications{
+
+  }
+  .contacts__specifications tbody {
     display: flex;
     flex-direction: row;
-    }
-    .contacts__btn-container{
+    flex-wrap: wrap;
+  }
+  .contacts__btn-container{
       display: flex;
-    }
-    .contacts__btn{
+  }
+  .contacts__btn{
     max-width: 230px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
+
+  @media (min-width: $desctop-width) {
+  .contacts{
+    display: flex;
+    flex-direction: row;
+    @include central-container;
+    @include inside-container;
+  }
+    .contacts__specifications{
+    box-sizing: border-box;
+    width: 40%;
+  }
+}
