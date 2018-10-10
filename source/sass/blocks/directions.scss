@@ -74,6 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .directions {
+    margin-top: 0;
     background-image: url("../img/hero-tablet@1x.jpg");
   }
   .directions__info{

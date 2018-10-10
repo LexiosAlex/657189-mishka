@@ -4,6 +4,7 @@
   background-color: $primary-color;
   font-size: 17px;
   line-height: 24px;
+  background-color: transparent;
 }
 
 .main-header__logo {
@@ -19,6 +20,7 @@
 @media (min-width: $mobile-width){
   .main-header{
     box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    background: linear-gradient(#ffffff 50%, #f9f9f9 50%);
   }
   .main-header__logo {
     top: 10px;
