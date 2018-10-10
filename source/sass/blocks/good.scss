@@ -1,4 +1,7 @@
 .good {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ececec;
 
   &:hover,
@@ -11,7 +14,21 @@
   }
 }
 
+.good__image{
+  order: 1;
+  display: flex;
+}
+
+.good__info-container{
+  order: 2;
+  display: flex;
+  flex-direction: column;
+}
+
 .good__title {
+  order: 2;
+  padding-left: 27px;
+
   color: $main-font-color;
   font-size: 17px;
   font-weight: $font-bold;
@@ -19,15 +36,58 @@
 }
 
 .good__description {
+  order: 3;
+  padding-left: 27px;
+
   color: $loghten-font;
-  font-size: 17px;
+  font-size: 13px;
   font-weight: $font-normal;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .good__bottom {
+  order: 4;
+  padding-left: 27px;
+
   color: $main-font-color;
   font-size: 15px;
   font-weight: $font-bold;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .good {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .good__image{
+    width: 50%;
+  }
+  .good__info-container{
+    width: 50%;
+  }
+  .good__bottom {
+    margin-top: auto;
+    margin-bottom: none;
+  }
+}
+
+@media (min-width: $desctop-width){
+  .good {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  .good__image{
+    width: 100%;
+  }
+  .good__info-container{
+    width: 90%;
+  }
+  .good__bottom {
+    margin-top: auto;
+    margin-bottom: none;
+  }
+}
+
