@@ -20,8 +20,13 @@
 @media (min-width: $mobile-width){
   .main-header{
     box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    background: linear-gradient(#ffffff 50%, #f1f1f1 50%);
+  }
+
+  .main-header--index{
     background: linear-gradient(#ffffff 50%, #f9f9f9 50%);
   }
+
   .main-header__logo {
     top: 10px;
     right: 50%;
