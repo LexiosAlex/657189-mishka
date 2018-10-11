@@ -63,9 +63,42 @@
     line-height: 30px;
   }
 
-  .production__btn{
+  .production__btn {
     width: 70%;
     margin-left: 40px;
     padding: 12px 0px;
+  }
+}
+@media (min-width: $desctop-width) {
+  .production {
+    position: relative;
+    max-width: 1148px;
+    @include container;
+  }
+  .production__container{
+    width: 63.5%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .production__title {
+    width: 22%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .production__description {
+    width: 21%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .production__btn{
+    display: block;
+    text-align: center;
+    width: 21%;
+    margin-left: auto;
+    margin-right: 0px;
   }
 }
