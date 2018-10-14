@@ -50,3 +50,143 @@
   margin-top: 16px;
   margin-bottom: 0;
 }
+
+
+@media (min-width: $mobile-width) {
+  .weekly-goods{
+    @include inside-container;
+    display: flex;
+    flex-direction: column;
+  }
+  .weekly-goods__header{
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+  .weekly-goods__title{
+    margin: 0;
+    order: 2;
+  }
+
+  .weekly-goods__subtitle {
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: $font-bold;
+    line-height: 30px;
+    order: 1;
+  }
+
+  .weekly-goods__main-container{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .weekly-goods__description {
+    color: $loghten-font;
+    font-size: 15px;
+    font-weight: $font-normal;
+    line-height: 20px;
+    width: 249px;
+    order: 3;
+  }
+  .weekly-goods__specifications {
+    order: 4;
+  }
+  .weekly-goods__image{
+    @include img-width;
+    order: 5;
+  }
+  .weekly-goods__price{
+    margin-right: auto;
+    margin-left: auto;
+    order: 6;
+  }
+  .weekly-goods__btn{
+    order: 7;
+  }
+  .weekly-goods__image-contaner{
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .weekly-goods__header{
+    flex-grow: 2;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    order: 1;
+  }
+  .weekly-goods__title{
+    display: flex;
+    margin: 0;
+    order: 2;
+    width: 70px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .weekly-goods__subtitle {
+    padding: 0;
+    margin: 0;
+    color: $main-font-color;
+    font-size: 43px;
+    font-weight: font-bold;
+    line-height: 50px;
+    order: 1;
+  }
+
+ .weekly-goods__main-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 2;
+  }
+
+  .weekly-goods__sub-container{
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+  }
+  .weekly-goods__image-contaner{
+    margin-left: auto;
+    margin-right: 0px;
+    display: flex;
+    order: 3;
+    width: 42%;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .weekly-goods{
+    max-width: 1050px;
+    @include central-container;
+  }
+  .weekly-goods__header{
+    padding-left: 50px;
+    z-index: 1;
+  }
+  .weekly-goods__title {
+    display: inline-block;
+    padding-top: 10px;
+    margin: 0;
+    order: 2;
+    width: 70px;
+    text-align: center;
+  }
+  .weekly-goods__subtitle {
+    width: 530px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 58px;
+    order: 2;
+  }
+   .weekly-goods__main-container{
+    padding-left: 175px;
+  }
+  .weekly-goods__image{
+    // srcset: url(../img/triple-set-desktop@1x.jpg);
+  }
+}
+

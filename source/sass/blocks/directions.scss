@@ -1,10 +1,3 @@
-.directions {
-  margin-top: 1px;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top left;
-}
-
 .directions__info {
   font-size: 27px;
   font-weight: $font-bold;
@@ -19,6 +12,7 @@
 
 .directions__list {
   @include list-unstyling;
+  width: 100%;
   margin-top: 120px;
   list-style: none;
   font-size: 19px;
@@ -32,6 +26,8 @@
   padding: 30px 0;
   background-color: $theme-color;
   width: 100%;
+  text-decoration: none;
+  color: $primary-color;
 
   span {
     display: block;
@@ -60,5 +56,63 @@
 .directions__item {
   &:nth-child(2n) .directions__link {
     background-color: $darken-theme-color;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .directions {
+    margin-top: 1px;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% -10%;
+    background-color: #f9f9f9;
+  }
+  .directions__list{
+    span{
+      @include inside-container;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .directions {
+    margin-top: 0;
+    background-image: url("../img/hero-tablet@1x.jpg");
+  }
+  .directions__info{
+    width: 500px;
+    margin-bottom: 360px;
+    color: $main-font-color;
+    font-size: 43px;
+    font-weight: $font-bold;
+    line-height: 50px;
+  }
+  .directions__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .directions__item {
+    display: flex;
+    width: 50%;
+  }
+}
+@media (min-width: $desctop-width) {
+  .directions__info{
+    width: 630px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .directions__list {
+    max-width: 1050px;
+    @include central-container;
+      span{
+        padding-left: 0px;
+        padding-left: 37px;
+      }
+  }
+  .directions__link{
+
   }
 }

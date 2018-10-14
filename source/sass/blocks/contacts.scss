@@ -13,7 +13,6 @@
 }
 
 .contacts__value {
-  white-space: pre;
   color: $loghten-font;
   font-size: 15px;
   font-weight: $font-normal;
@@ -22,6 +21,8 @@
 
 .contacts__email {
   position: relative;
+  text-decoration: none;
+  color: $main-font-color;
 
   &::after {
     content: "";
@@ -40,5 +41,87 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .contacts{
+    max-width: 1050px;
+  }
+  .contacts__title{
+  }
+  .contacts__specifications{
+    display: flex;
+  }
+  .contacts__field{
+    vertical-align: top;
+    width: 50px;
+  }
+  .contacts__value {
+    padding-left: 30px;
+    width: 180px;
+    span {
+      display: block;
+    width: 150px;
+    }
+  }
+  .contacts__btn-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include inside-container;
+  }
+  .contacts__btn{
+    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts{
+    @include central-container;
+    @include inside-container;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contacts__title{
+    padding: 0px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .contacts__specifications{
+    width: 100%;
+  }
+  .contacts__specifications tbody {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contacts__btn-container{
+      display: flex;
+  }
+  .contacts__btn{
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+  @media (min-width: $desctop-width) {
+  .contacts{
+    display: flex;
+    flex-direction: row;
+    @include central-container;
+    @include inside-container;
+  }
+    .contacts__specifications{
+    box-sizing: border-box;
+    width: 40%;
   }
 }

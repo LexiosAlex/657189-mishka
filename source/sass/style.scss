@@ -1,13 +1,15 @@
 @import "normalize.scss";
 @import "font-stack.scss";
+@import "variables.scss";
 @import "colors.scss";
-@import "mixins.scss";
 @import "global.scss";
+@import "mixins.scss";
 @import "visually-hidden.scss";
 @import "blocks/btn.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-nav.scss";
+@import "blocks/stock-nav.scss";
 @import "blocks/user-nav.scss";
 @import "blocks/directions.scss";
 @import "blocks/weekly-goods.scss";
@@ -16,6 +18,7 @@
 @import "blocks/contacts.scss";
 @import "blocks/page-header.scss";
 @import "blocks/catalog-items.scss";
+@import "blocks/catalog-video.scss";
 @import "blocks/good.scss";
 @import "blocks/production.scss";
 @import "blocks/form-sorting.scss";

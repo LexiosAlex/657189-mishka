@@ -1,4 +1,5 @@
 .main-nav {
+  position: relative;
   background-color: $primary-color;
   color: $main-font-color;
 }
@@ -8,4 +9,81 @@
   list-style: none;
   color: $main-font-color;
   font-weight: $font-bold;
+}
+
+.main-nav__logo-container {
+  position: relative;
+}
+
+@media (min-width: $mobile-width) {
+  .main-nav__stock{
+    display: none;
+  }
+
+  .main-nav__toggle-contatainer{
+    position: relative;
+    display: block;
+    min-height: 70px;
+  }
+
+  .main-nav__toggle{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav{
+    max-width: 1150px;
+    display: block;
+    background: linear-gradient(#ffffff 50%, #f1f1f1 50%);
+  }
+
+  .main-nav--index{
+    background: linear-gradient(#ffffff 50%, #f9f9f9 50%);
+  }
+
+  .main-nav__toggle-contatainer{
+    display: none;
+  }
+
+  .main-nav__wrapper{
+    max-width: 1150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .main-nav__list{
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__toggle{
+    display: none;
+  }
+}
+
+@media (min-width: $desctop-width){
+  .main-nav{
+    @include central-container;
+  }
+
+  .main-nav__list{
+    @include inside-container;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .main-nav__stock {
+    @include list-unstyling;
+    display: flex;
+  }
 }

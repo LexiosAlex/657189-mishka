@@ -2,33 +2,46 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header main-header--index">
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;Мишка&raquo;">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav main-nav--index">
+        <div class="main-nav__toggle-contatainer">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-nav">
-            <li class="site-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-nav">
-            <li class="user-nav__item">
-              <a href="">Поиск по сайту</a>
-            </li>
-            <li class="user-nav__item">
-              <a href="">Корзина: пока пуста</a>
-            </li>
-          </ul>
+            <ul class="main-nav__list site-nav">
+              <li class="site-nav__item">
+                <a href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list stock-nav">
+              <li class="stock-nav__item">
+                <a href="">Новые поступления</a>
+              </li>
+              <li class="stock-nav__item">
+                <a href="">Распродажа</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-nav">
+              <li class="user-nav__item user-nav__search">
+                <a class="search" href=""><span>Поиск по сайту</span></a>
+              </li>
+              <li class="user-nav__item user-nav__cart">
+                <a href="">Корзина: пока пуста</a>
+            </ul>
+            <p class="user-nav__delivery">
+              Бесплатная доставка по России
+            </p>
         </div>
       </nav>
     </header>
@@ -39,50 +52,58 @@
         <p class="directions__info">Милые штуки ручной работы для дома</p>
         <ul class="directions__list">
           <li class="directions__item">
-            <a class="directions__link">
+            <a class="directions__link" href="">
               <span>Предметы интерьера</span>
             </a>
           </li>
           <li class="directions__item">
-            <a class="directions__link">
+            <a class="directions__link" href="">
               <span>Детские игрушки</span>
             </a>
           </li>
         </ul>
       </section>
       <section class="weekly-goods">
+        <div class="weekly-goods__header">
           <h2 class="weekly-goods__title">Товар недели</h2>
           <h3 class="weekly-goods__subtitle">Вязаные корзинки</h3>
-          <p class="weekly-goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="weekly-goods__specifications">
-            <tr>
-              <td class="weekly-goods__field">
-                Цвет:
-              </td>
-              <td class="weekly-goods__value">
-                «Тиффани»/серый
-              </td>
-            </tr>
-            <tr>
-              <td class="weekly-goods__field">
-                Диаметр:
-              </td>
-              <td class="weekly-goods__value">
-                25 см
-              </td>
-            </tr>
-            <tr>
-              <td class="weekly-goods__field">
-                Высота:
-              </td>
-              <td class="weekly-goods__value">
-                15 см
-              </td>
-            </tr>
-          </table>
-          <img class="weekly-goods__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели: корзинка">
-          <p class="weekly-goods__price">Цена: 990 руб.</p>
-          <a class="btn weekly-goods__btn" href="">Заказать</a>
+        </div>
+        <div class="weekly-goods__main-container">
+          <div class="weekly-goods__sub-container">
+            <p class="weekly-goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="weekly-goods__specifications">
+              <tr>
+                <td class="weekly-goods__field">
+                  Цвет:
+                </td>
+                <td class="weekly-goods__value">
+                  «Тиффани»/серый
+                </td>
+              </tr>
+              <tr>
+                <td class="weekly-goods__field">
+                  Диаметр:
+                </td>
+                <td class="weekly-goods__value">
+                  25 см
+                </td>
+              </tr>
+              <tr>
+                <td class="weekly-goods__field">
+                  Высота:
+                </td>
+                <td class="weekly-goods__value">
+                  15 см
+                </td>
+              </tr>
+            </table>
+            <p class="weekly-goods__price">Цена: 990 руб.</p>
+            <a class="btn weekly-goods__btn" href="">Заказать</a>
+          </div>
+          <div class="weekly-goods__image-contaner">
+            <img class="weekly-goods__image" src="img/triple-set-tablet@1x.jpg" width="333" height="404" alt="Товар недели: корзинка">
+          </div>
+        </div>
       </section>
       <section class="advantages">
         <h2 class="advantages__title">Коротко о нас:</h2>
@@ -101,7 +122,7 @@
           <div class="rewiews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__author">Анастасия Красильникова <span>@misssssiskras</span></cite>
-              <p class="rewiews__text">
+              <p class="reviews__text">
                 Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
                 как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
                 и мои фотографии сразу стали более стильными, а также набирают больше лайков!
@@ -131,9 +152,12 @@
               адрес:
             </td>
             <td class="contacts__value">
-              г. Санкт-Петербург,
-              ул. Большая Конюшенная,
-              д. 19/8, офис 101
+              <span>
+                г. Санкт-Петербург,
+                ул. Большая
+                Конюшенная,
+                д. 19/8, офис 101
+              </span>
             </td>
           </tr>
         </table>
@@ -142,20 +166,27 @@
               <img src="img/map-mobile@1x.jpg" width="322" height="457" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </div>
         </div>
-        <a class="contacts__btn btn" href="">Напишите нам</a>
+        <div class="contacts__btn-container">
+          <a class="contacts__btn btn" href="">Напишите нам</a>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
-      <ul class="main-footer__social social-list">
-        <li class="social-list__item social-list__item--insta"><a class="visually-hidden" href="">Instagram</a></li>
-        <li class="social-list__item social-list__item--fb"><a class="visually-hidden" href="">Facebook</a></li>
-        <li class="social-list__item social-list__item--twit"><a class="visually-hidden" href="">Twitter</a></li>
-      </ul>
-      <div class="main-footer__copyright copyright">
-        <p class="copyrgiht__creator">Разработано</p>
-        <a class="copyright__logo" href="#">
-          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="Html-academy">
-        </a>
+      <div class="main-footer__container">
+      <a class="main-footer__logo">
+        <img class="main-footer__logo-img" src="img/logo-tablet.svg" alt="Мишка">
+      </a>
+        <ul class="main-footer__social social-list">
+          <li class="social-list__item social-list__item--insta"><a class="visually-hidden" href="">Instagram</a></li>
+          <li class="social-list__item social-list__item--fb"><a class="visually-hidden" href="">Facebook</a></li>
+          <li class="social-list__item social-list__item--twit"><a class="visually-hidden" href="">Twitter</a></li>
+        </ul>
+        <div class="main-footer__copyright copyright">
+          <p class="copyrgiht__creator">Разработано</p>
+          <a class="copyright__logo" href="#">
+            <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="Html-academy">
+          </a>
+        </div>
       </div>
     </footer>
     <div class="overlay">

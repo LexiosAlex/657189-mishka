@@ -1,3 +1,14 @@
 .catalog-items__list {
   @include list-unstyling;
+  @include inside-container;
+}
+
+@media (min-width: $desctop-width){
+  .catalog-items__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    @include container;
+    margin-bottom: 30px;
+  }
 }

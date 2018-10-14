@@ -1,0 +1,43 @@
+.stock-nav{
+  order: 3;
+}
+
+.stock-nav {
+  display: none;
+}
+
+.stock-nav__item{
+  padding-top: 20px;
+  a {
+    padding-right: 30px;
+    text-decoration: none;
+    width: 160px;
+    height: 15px;
+    color: $main-font-color;
+    font-size: 15px;
+    font-weight: $font-bold;
+    line-height: 24px;
+
+    &:hover,
+    &:focus {
+      color: $link-hover-color;
+    }
+
+    &:active {
+      color: $link-active-color;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .stock-nav {
+    display: none;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .stock-nav {
+    display: flex;
+  }
+}
+
