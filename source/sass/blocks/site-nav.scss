@@ -36,9 +36,7 @@
   .site-nav__item{
 
     box-shadow: none;
-    border: 1px solid #ececec;
-    border-bottom: none;
-    border-top: none;
+    border: none;
 
     a {
       color: $main-font-color;
@@ -67,7 +65,7 @@
   .site-nav__item{
     width: 170px;
     box-shadow: none;
-    border: none;
+    border-right: 1px solid #ececec;
     a {
       margin: 0;
       &:nth-child(1){

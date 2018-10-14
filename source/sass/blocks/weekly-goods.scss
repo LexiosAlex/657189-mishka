@@ -94,6 +94,7 @@
     order: 4;
   }
   .weekly-goods__image{
+    @include img-width;
     order: 5;
   }
   .weekly-goods__price{
@@ -149,10 +150,11 @@
     width: 282px;
   }
   .weekly-goods__image-contaner{
-    margin-left: 40px;
+    margin-left: auto;
+    margin-right: 0px;
     display: flex;
     order: 3;
-    width: 50%;
+    width: 42%;
   }
 }
 

@@ -72,7 +72,7 @@
 @media (min-width: $desctop-width) {
   .production {
     position: relative;
-    max-width: 91%;
+    max-width: 1150px;
     @include container;
   }
   .production__container{
