@@ -8,8 +8,12 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;Мишка&raquo;">
+      <a href="index.html" class="main-header__logo">
+        <picture>
+          <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg" width="149px" height="89px" >
+          <source media="(min-width: 668px)" srcset="img/logo-tablet.svg" width="113px" height="46px">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg"  alt="Магазин &laquo;Мишка&raquo;">
+        </picture>
       </a>
       <nav class="main-nav">
         <div class="main-nav__toggle-contatainer">
@@ -21,7 +25,7 @@
                 <a href="catalog.html">Каталог товаров</a>
               </li>
               <li class="site-nav__item">
-                <a href="form.html">Вязание на заказ</a>
+                <a href="">Вязание на заказ</a>
               </li>
             </ul>
             <ul class="main-nav__list stock-nav">

@@ -9,7 +9,11 @@
   <body>
     <header class="main-header">
       <a href="index.html" class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;Мишка&raquo;">
+        <picture>
+          <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg" width="149px" height="89px" >
+          <source media="(min-width: 668px)" srcset="img/logo-tablet.svg" width="113px" height="46px">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg"  alt="Магазин &laquo;Мишка&raquo;">
+        </picture>
       </a>
       <nav class="main-nav">
         <div class="main-nav__toggle-contatainer">
@@ -18,7 +22,7 @@
         <div class="main-nav__wrapper">
             <ul class="main-nav__list site-nav">
               <li class="site-nav__item">
-                <a href="catalog.html">Каталог товаров</a>
+                <a href="">Каталог товаров</a>
               </li>
               <li class="site-nav__item">
                 <a href="form.html">Вязание на заказ</a>
@@ -52,7 +56,13 @@
       <section class="catalog-items">
         <ul class="catalog-items__list catalog-assortment">
           <li class="catalog-assortment__item good">
-            <a class="good__image" href=""><img src="img/photo-hare-mobile@1x.jpg" alt="Изображение товара:кролик"></a>
+            <a class="good__image" href="">
+              <picture>
+                <source media="(min-width: 1050px)" srcset="img/photo-hare-desctop@1x.jpg 1x, img/photo-hare-desctop@2x.jpg 2x" width="316px" height="462px">
+                <source media="(min-width: 668px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x" width="334px" height="334px">
+                <img src="img/photo-hare-mobile@1x.jpg 1x" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Изображение товара:кролик">
+              </picture>
+             </a>
             <div class="good__info-container">
               <h2 class="good__title"><a>Зайчик-попрыгайчик</a></h2>
               <p class="good__description">Рост 30 см, вес 200 г</p>
@@ -65,7 +75,13 @@
           </div>
           </li>
           <li class="catalog-assortment__item good">
-            <a class="good__image" href=""><img src="img/photo-bowl-mobile@1x.jpg" alt="Изображение товара:корзина"></a>
+            <a class="good__image" href="">
+              <picture>
+                <source media="(min-width: 1050px)" srcset="img/photo-bowl-desctop@1x.jpg 1x, img/photo-bowl-desctop@2x.jpg 2x" width="316px" height="462px">
+                <source media="(min-width: 668px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x" width="334px" height="334px">
+                <img src="img/photo-bowl-mobile@1x.jpg 1x" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Изображение товара:корзина">
+              </picture>
+            </a>
             <div class="good__info-container">
               <h2 class="good__title"><a>Корзинка для белья</a></h2>
               <p class="good__description">Диаметр 15 см, высота 10 см</p>
@@ -78,7 +94,13 @@
             </div>
           </li>
           <li class="catalog-assortment__item good">
-            <a class="good__image" href=""><img src="img/photo-toys-mobile@1x.jpg" alt="Изображение товара:корзина для игрушек"></a>
+            <a class="good__image" href="">
+              <picture>
+                <source media="(min-width: 1050px)" srcset="img/photo-toys-desctop@1x.jpg 1x, img/photo-toys-desctop@2x.jpg 2x" width="316px" height="462px">
+                <source media="(min-width: 668px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x" width="334px" height="334px">
+                <img src="img/photo-toys-mobile@1x.jpg 1x" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Изображение товара:корзина для игрушек">
+              </picture>
+            </a>
             <div class="good__info-container">
             <h2 class="good__title"><a>Большая корзинка для игрушек</a></h2>
               <p class="good__description">Диаметр 30 см, высота 30 см</p>
