@@ -120,8 +120,16 @@
     @include central-container;
     @include inside-container;
   }
-    .contacts__specifications{
+  .contacts__specifications{
     box-sizing: border-box;
     width: 40%;
+    tbody{
+      width: 400px;
+      flex-direction: column;
+    }
+  }
+  .contacts__container{
+    display: flex;
+    flex-direction: column;
   }
 }
