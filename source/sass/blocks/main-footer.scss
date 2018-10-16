@@ -13,8 +13,35 @@
     flex-wrap: wrap;
     @include inside-container;
   }
+  .social-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: space-around;
+  }
   .main-footer__logo {
     display: none;
+  }
+  .social-list__item {
+    position: relative;
+  }
+  .main-footer__social-logo {
+    position: absolute;
+    top: 15px;
+    fill: $main-font-color;
+  }
+  .social-list__link {
+    &:hover,
+    &:focus {
+      .main-footer__social-logo{
+        fill: $theme-color;
+      }
+    }
+    &:active{
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
   }
 }
 
