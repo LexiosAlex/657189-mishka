@@ -22,6 +22,7 @@
 }
 
 .directions__link {
+  position: relative;
   display: block;
   padding: 30px 0;
   background-color: $theme-color;
@@ -44,13 +45,29 @@
     span {
       transform: scaleY(0.86);
     }
+    .directions__icon {
+      opacity: 0.7;
+      transform: scaleY(0.86);
+    }
   }
 
   &:active {
     span {
       color: $btn-active-color;
     }
+    .directions__icon {
+      opacity: 0.3;
+      transform: scaleY(0.86);
+    }
   }
+}
+
+.directions__icon {
+  position: absolute;
+  fill: #149080;
+  opacity: 0.5;
+  right: 30px;
+  top: 20px;
 }
 
 .directions__item {
@@ -103,10 +120,12 @@
     flex-wrap: wrap;
     width: 100%;
   }
+
   .directions__item {
     display: flex;
     width: 50%;
   }
+
 }
 @media (min-width: $desctop-width) {
   .directions__info{
@@ -117,12 +136,9 @@
   .directions__list {
     max-width: 1050px;
     @include central-container;
-      span{
-        padding-left: 0px;
-        padding-left: 37px;
-      }
-  }
-  .directions__link{
-
+    span{
+      padding-left: 0px;
+      padding-left: 37px;
+    }
   }
 }

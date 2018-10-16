@@ -12,11 +12,17 @@
 }
 
 .advantages__item {
+  position: relative;
   padding-top: 88px;
   color: $main-font-color;
   font-size: 17px;
   font-weight: $font-bold;
   line-height: 20px;
+}
+.advantages__icon {
+  position: absolute;
+  fill: $theme-color;
+  top: 40px;
 }
 
 @media (min-width: $mobile-width) {
@@ -28,6 +34,17 @@
 @media (min-width: $tablet-width) {
   .advantages{
     max-width: 1050px;
+    position: relative;
+      &::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 34px;
+        background-image: url("../img/bg-zigzag-line.svg");
+        background-repeat: repeat-x;
+        left: 0px;
+        top: -20px;
+    }
   }
   .advantages__title {
     font-size: 43px;
