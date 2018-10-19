@@ -131,14 +131,27 @@
 @media (min-width: $desctop-width) {
   .reviews{
     @include central-container;
-    background-repeat: no-repeat;
-    background-position: top left;
+    background-position: 50px 88px;
   }
   .reviews__title {
+    padding-left: 170px;
     font-size: 53px;
     line-height: 57px;
   }
+
+  .reviews__item{
+    padding-left: 170px;
+  }
+
   .reviews__text {
-    width: 768px;
+    width: 778px;
+  }
+
+  .reviews__author{
+    padding-top: 23px;
+  }
+
+  .reviews__btn{
+    top: 140px;
   }
 }

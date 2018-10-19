@@ -39,5 +39,7 @@
   .stock-nav {
     display: flex;
   }
+  .stock-nav__item:nth-child(2){
+    padding-left: 30px;
+  }
 }
-

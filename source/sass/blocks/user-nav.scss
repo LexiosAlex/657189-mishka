@@ -42,6 +42,7 @@
 .user-nav__cart-icon {
   position: absolute;
   display: block;
+  top: 30px;
   left: 8px;
   fill: $main-font-color;
   opacity: 0.2;
@@ -49,6 +50,7 @@
 .user-nav__search-icon{
   position: absolute;
   display: block;
+  top: 32px;
   left: 8px;
   fill: $main-font-color;
   opacity: 0.2;
@@ -119,15 +121,14 @@
     font-weight: $font-normal;
     line-height: 24px;
   }
-}
-
-.user-nav__cart-icon {
-  top: 35px;
-  left: 30px;
-}
-.user-nav__search-icon{
-  top: 35px;
-  left: 12px;
+  .user-nav__cart-icon {
+    top: 35px;
+    left: 30px;
+  }
+  .user-nav__search-icon{
+    top: 35px;
+    left: 12px;
+  }
 }
 
 @media (min-width: $desctop-width){

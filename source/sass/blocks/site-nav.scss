@@ -6,6 +6,9 @@
   a {
     text-decoration: none;
     color: $main-font-color;
+    font-size: 17px;
+    font-weight: $font-bold;
+    line-height: 24px;
     display: flex;
     width: 70%;
     margin-left: auto;
@@ -44,9 +47,7 @@
       margin: 0;
       padding-top: 20px;
       padding-left: 0px;
-      color: $main-font-color;
       font-size: 15px;
-      font-weight: $font-bold;
       line-height: 24px;
       display: inline-block;
       width: 100%;
@@ -70,12 +71,16 @@
   .site-nav__item{
     width: 170px;
     box-shadow: none;
-    border-right: 1px solid #ececec;
     a {
       margin: 0;
-      &:nth-child(1){
-        padding-left: 0px;
-      }
+      padding-top: 30px;
+      font-size: 17px;
+      line-height: 24px;
+    }
+    &:nth-child(1){
+      padding-left: 0px;
+      padding-right: 13px;
+      border-right: 1px solid #ececec;
     }
   }
 }

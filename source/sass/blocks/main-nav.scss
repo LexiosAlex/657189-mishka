@@ -37,7 +37,7 @@
   content: "";
   width: 21px;
   height: 21px;
-  background-image: url(../../img/icon-menu-close.svg);
+  background-image: url(../img/icon-menu-close.svg);
   background-repeat: no-repeat;
   background-size: 21px 21px;
 }
@@ -78,8 +78,11 @@
 @media (min-width: $desctop-width){
   .main-nav{
     @include central-container;
+    background: linear-gradient(#ffffff 65%, #f1f1f1 35%);
   }
-
+  .main-nav--index{
+    background: linear-gradient(#ffffff 65%, #f9f9f9 35%);
+  }
   .main-nav__list{
     @include inside-container;
   }
@@ -96,3 +99,4 @@
     display: flex;
   }
 }
+

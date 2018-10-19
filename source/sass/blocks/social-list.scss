@@ -15,22 +15,31 @@
 .social-list__link {
   display: block;
   position: relative;
-  &:hover,
-  &:focus {
-    .main-footer__social-logo{
-      fill: $theme-color;
-    }
-  }
-  &:active{
-    fill: #46c1ae;
-    opacity: 0.3;
-  }
+}
+
+.social-list__link:hover .main-footer__social-logo,
+.social-list__link:focus .main-footer__social-logo{
+  fill: $theme-color;
+}
+
+.social-list__link:active .main-footer__social-logo{
+  fill: #46c1ae;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
-  .social-list{
+  .social-list {
     margin: 0px;
     padding-top: 33px;
     padding-left: 110px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .social-list {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 120px;
+    padding-right: 45px;
   }
 }

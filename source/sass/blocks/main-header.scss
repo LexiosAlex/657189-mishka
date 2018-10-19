@@ -49,6 +49,14 @@
 }
 @media (min-width: $desctop-width){
   .main-header__logo {
-    left: 46%;
+    top: 10px;
+    left: 44%;
+  }
+  .main-header{
+    background: linear-gradient(#ffffff 65%, #f1f1f1 35%);
+  }
+
+  .main-header--index{
+    background: linear-gradient(#ffffff 65%, #f9f9f9 35%);
   }
 }

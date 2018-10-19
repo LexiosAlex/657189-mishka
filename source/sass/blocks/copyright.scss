@@ -52,3 +52,14 @@
   }
 }
 
+@media (min-width: $desctop-width){
+  .copyrgiht__creator{
+    padding-left: 0px;
+    padding-right: 57px;
+  }
+
+  .copyright{
+    width: auto;
+    margin-right: 0px;
+  }
+}

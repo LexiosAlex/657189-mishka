@@ -26,7 +26,7 @@
   display: block;
   padding: 0;
   padding-top: 27px;
-  padding-bottom: 28px;
+  padding-bottom: 30px;
   background-color: $theme-color;
   width: 100%;
   text-decoration: none;
@@ -39,17 +39,16 @@
 
   &:hover,
   &:focus {
-    padding-top: 25px;
-    padding-bottom: 35px;
-    transform: scaleY(1.14)
-      translateY(-5px);
+    margin-top: -10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 
     span {
-      transform: scaleY(0.86);
+
     }
     .directions__icon {
       opacity: 0.7;
-      transform: scaleY(0.86);
+
     }
   }
 
@@ -59,7 +58,6 @@
     }
     .directions__icon {
       opacity: 0.3;
-      transform: scaleY(0.86);
     }
   }
 }
@@ -68,15 +66,14 @@
   position: absolute;
   fill: #149080;
   opacity: 0.5;
-}
-
-.directions__icon--interior{
-  right: 35px;
-  top: 25px;
-}
-.directions__icon--toy{
-  right: 27px;
-  top: 22px;
+  &--interior{
+    right: 35px;
+    top: 25px;
+  }
+  &--toy{
+    right: 27px;
+    top: 22px;
+  }
 }
 
 .directions__item {
@@ -144,19 +141,25 @@
     padding-left: 35px;
     }
   }
-
-  .directions__icon--interior{
-    right: 35px;
-    top: 30px;
+  .directions__icon {
+    position: absolute;
+    fill: #149080;
+    opacity: 0.5;
+    &--interior{
+      right: 35px;
+      top: 30px;
+    }
+    &--toy{
+      right: 35px;
+      top: 30px;
+    }
   }
-  .directions__icon--toy{
-    right: 35px;
-    top: 30px;
-  }
-
 }
+
 @media (min-width: $desctop-width) {
   .directions__info{
+    padding-top: 110px;
+    margin-bottom: 360px;
     width: 630px;
     font-size: 53px;
     line-height: 57px;
