@@ -15,33 +15,42 @@
   position: relative;
 }
 
-@media (min-width: $mobile-width) {
-  .main-nav__stock{
-    display: none;
-  }
+.main-nav__stock{
+  display: none;
+}
 
-  .main-nav__toggle-contatainer{
-    position: relative;
-    display: block;
-    min-height: 70px;
-  }
+.main-nav__toggle-contatainer{
+  position: relative;
+  display: block;
+  min-height: 80px;
+}
 
-  .main-nav__toggle{
-    position: absolute;
-    right: 30px;
-    top: 30px;
-  }
+.main-nav__toggle{
+  visibility: hidden;
+  position: absolute;
+  right: 22px;
+  top: 25px;
+}
+.main-nav__toggle--off:after{
+  visibility: visible;
+  display: block;
+  content: "";
+  width: 21px;
+  height: 21px;
+  background-image: url(../../img/icon-menu-close.svg);
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav{
     max-width: 1150px;
     display: block;
-    background: linear-gradient(#ffffff 50%, #f1f1f1 50%);
+    background: linear-gradient(#ffffff 55%, #f1f1f1 45%);
   }
 
   .main-nav--index{
-    background: linear-gradient(#ffffff 50%, #f9f9f9 50%);
+    background: linear-gradient(#ffffff 55%, #f9f9f9 45%);
   }
 
   .main-nav__toggle-contatainer{

@@ -4,13 +4,16 @@
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   a {
+    position: relative;
     text-decoration: none;
     color: $main-font-color;
     display: flex;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 0;
+    padding-left: 50px;
+    padding-top: 27px;
+    padding-bottom: 28px;
 
     &:hover,
     &:focus {
@@ -36,9 +39,19 @@
 .user-nav__delivery{
   display: none;
 }
-
+.user-nav__cart-icon {
+  position: absolute;
+  display: block;
+  left: 8px;
+  fill: $main-font-color;
+  opacity: 0.2;
+}
 .user-nav__search-icon{
-  display: none;
+  position: absolute;
+  display: block;
+  left: 8px;
+  fill: $main-font-color;
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width){
@@ -57,53 +70,47 @@
     border: 1px solid #ececec;
     border-bottom: none;
     border-top: none;
+    a {
+      padding-left: 0px;
+      padding-top: 32px;
+      padding-bottom: 30px;
+      width: 50%;
+    }
   }
 
   .user-nav__search {
     width: 82px;
-    margin-left: 50%;
+    margin-left: auto;
+    margin-right: 0px;
   }
 
   .user-nav__search-link {
+    width: 100%;
     span{
     display: none;
-    }
-  .user-nav__search-icon{
-    position: absolute;
-    display: block;
-    left: 30px;
-    fill: $main-font-color;
-    opacity: 0.2;
     }
   }
 
   .user-nav__cart{
     margin: 0;
-    padding-left: 30px;
-    margin-left: auto;
     margin-right: 0;
     border-left: none;
     border-right: none;
     padding-right: 50px;
     a {
+      padding-left: 82px;
       display: inline-block;
       margin: 0;
       width: 100%;
     }
   }
-  .user-nav__cart-icon {
-    position: absolute;
-    display: block;
-    left: 0px;
-    fill: $main-font-color;
-    opacity: 0.2;
-  }
 
   .user-nav__delivery{
+    margin: 0;
+    padding-bottom: 30px;
     display: block;
     align-self: flex-end;
     margin-left: auto;
-    margin-right: 0;
     width: auto;
     padding-right: 50px;
     order: 4;
@@ -112,6 +119,15 @@
     font-weight: $font-normal;
     line-height: 24px;
   }
+}
+
+.user-nav__cart-icon {
+  top: 35px;
+  left: 30px;
+}
+.user-nav__search-icon{
+  top: 35px;
+  left: 12px;
 }
 
 @media (min-width: $desctop-width){
