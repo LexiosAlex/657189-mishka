@@ -1,3 +1,9 @@
+.catalog-video{
+  width: 260px;
+  height: 150px;
+}
+
+
 .catalog-video__btn{
   position: absolute;
   top: 40px;
@@ -24,4 +30,15 @@
 .catalog-video__image{
   position: absolute;
   @include img-width;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-video{
+    width: 668px;
+    height: 455px;
+  }
+  .catalog-video__btn{
+    top: 190px;
+    left: 280px;
+  }
 }

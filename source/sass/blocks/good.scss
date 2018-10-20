@@ -90,20 +90,40 @@
 
 @media (min-width: $tablet-width) {
   .good {
-    margin-top: 30px;
+    margin-top: 54px;
     display: flex;
     flex-direction: row;
   }
+
+  .good__title{
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .good__description{
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .good__price{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
   .good__image-container{
     width: 50%;
+    max-height: 333px;
   }
   .good__info-container{
-    width: 50%;
+    width: 41.5%;
   }
   .good__bottom {
-    padding-top: 10px;
+    margin-left: 5px;
+    padding-top: 23px;
+    padding-bottom: 26px;
     margin-top: auto;
-    margin-bottom: none;
+    margin-bottom: 0;
   }
 }
 
