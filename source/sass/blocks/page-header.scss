@@ -4,8 +4,9 @@
 
 .page-header__title {
   margin-top: 0px;
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-left:10px;
+  padding-top: 72px;
+  padding-bottom: 76px;
   width: 250px;
   margin-left: auto;
   margin-right: auto;
@@ -13,4 +14,8 @@
   font-size: 27px;
   font-weight: $font-bold;
   line-height: 30px;
+}
+
+@media(min-width: $tablet-width){
+
 }

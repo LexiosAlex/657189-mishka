@@ -1,5 +1,27 @@
 .catalog-video__btn{
   position: absolute;
-  top: 30%;
-  left: 10%;
+  top: 40px;
+  left: 30%;
+  width: 101px;
+  height: 77px;
+  background-image: url(../img/icon-play.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  &:hover,
+  &:focus{
+    transform:
+    scale(1.2);
+  }
+  &:focus{
+    opacity: 0.3;
+    transform:
+    scale(0.8);
+  }
+}
+
+.catalog-video__image{
+  position: absolute;
+  @include img-width;
 }
