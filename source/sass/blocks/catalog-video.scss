@@ -42,3 +42,10 @@
     left: 280px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .catalog-video{
+    width: 682px;
+    height: 455px;
+  }
+}

@@ -106,35 +106,44 @@
   }
 }
 @media (min-width: $desctop-width) {
+
   .production {
     position: relative;
-    max-width: 1150px;
+    max-width: 1050px;
     @include container;
+    margin-top: 55px;
+    margin-bottom: 105px;
   }
+
   .production__container{
-    width: 63.5%;
     position: absolute;
     left: 0px;
     top: 0px;
+    width: 65%;
   }
 
   .production__title {
-    width: 22%;
+    padding-top: 70px;
+    padding-left: 0px;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 60px;
+    width: 22%;
+    background-position: 1px 16px;
   }
 
   .production__description {
-    width: 21%;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 20px;
+    width: 25%;
   }
 
-  .production__btn{
+  .production__btn {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: 58px;
+    margin-bottom: 60px;
     display: block;
     text-align: center;
-    width: 21%;
-    margin-left: auto;
-    margin-right: 0px;
+    width: 21.5%;
   }
 }
