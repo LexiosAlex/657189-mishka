@@ -15,6 +15,10 @@
   font-size: 27px;
   font-weight: $font-bold;
   line-height: 30px;
+  &--form{
+    padding-left: 0px;
+    width: 250px;
+  }
 }
 
 @media (min-width: $tablet-width){
@@ -40,6 +44,12 @@
     font-size: 43px;
     line-height: 50px;
     width: 376px;
+    &--form{
+      padding-top: 23px;
+      padding-left: 6px;
+      width: 400px;
+
+    }
   }
 }
 
