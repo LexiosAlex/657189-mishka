@@ -58,6 +58,7 @@
     background-color: #f1f1f1;
     padding-bottom: 45px;
   }
+
   .page-header::after {
     content: "";
     position: absolute;
@@ -68,6 +69,7 @@
     bottom: 0px;
     left: 0px;
   }
+
   .page-header__title {
     margin-bottom: 0px;
     padding-left: 14px;
@@ -75,6 +77,9 @@
     font-size: 53px;
     line-height: 57px;
     width: 476px;
+    &--form{
+      width: 500px;
+    }
   }
 }
 
