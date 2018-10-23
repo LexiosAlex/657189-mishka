@@ -42,9 +42,11 @@
     width: 260px;
     padding-top: 32px;
     margin: 0px;
+    margin-left: auto;
   }
   .copyrgiht__creator{
-    padding-left: 80px;
+    padding-top: 15px;
+    padding-left: 14.7%;
   }
   .copyright__logo-img{
     top: 57px;
@@ -55,7 +57,9 @@
 @media (min-width: $desctop-width){
   .copyrgiht__creator{
     padding-left: 0px;
+    padding-top: 10px;
     padding-right: 57px;
+    margin-left: 0px;
   }
 
   .copyright{

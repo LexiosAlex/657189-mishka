@@ -9,22 +9,30 @@ var popupShow = document.querySelector(".popup-show");
       popup.classList.add("overlay-show");
   });
 
-  popup.addEventListener("click", function (evt) {
+  popup.onmousedown = function(evt) {
       evt.preventDefault();
       popup.classList.remove("overlay-show");
-    });
+    };
 
 
   if (mobileScript.matches) {
     menuMobile.classList.add("main-nav__wrapper--hidden");
     menuToggle.classList.add("main-nav__toggle--on");
 
-    menuToggle.addEventListener("click", function (evt){
-      evt.preventDefault();
-      menuMobile.classList.remove("main-nav__wrapper--hidden");
-      menuToggle.classList.remove("main-nav__toggle--on");
-      menuToggle.classList.add("main-nav__toggle--off");
-    });
+     menuToggle.addEventListener("click", function (event) {
+    event.preventDefault();
+
+   if (menuMobile.classList.contains('main-nav__wrapper--hidden')) {
+      menuMobile.classList.remove('main-nav__wrapper--hidden');
+      menuToggle.classList.remove('main-nav__toggle--on');
+      menuToggle.classList.add('main-nav__toggle--off');
+    }
+   else {
+      menuMobile.classList.add('main-nav__wrapper--hidden');
+      menuToggle.classList.remove('main-nav__toggle--off');
+      menuToggle.classList.add('main-nav__toggle--on');
+   }
+  });
 
   } else {
 
