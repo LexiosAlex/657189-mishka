@@ -1,4 +1,5 @@
 .form-sorting__description {
+  margin-top: 22px;
   width: 242px;
   color: $loghten-font;
   font-size: 13px;
@@ -12,6 +13,7 @@
 }
 
 .form-sorting__important-inputs {
+  margin-top: 11px;
   color: $loghten-font;
   font-size: 14px;
   font-weight: $font-normal;
@@ -20,15 +22,34 @@
 }
 
 .form-sorting__btn {
+  margin-top: 18px;
+  margin-bottom: 55px;
   margin-left: 30px;
-  padding: 0;
-  padding: 12px 50px;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 22px;
+  width: 81.2%;
+  padding-bottom: 16px;
   text-align: center;
+}
+
+.form-sorting__textarea{
+  margin-top: 15px;
+  padding-top: 14px;
+  padding-left: 12px;
+  padding-right: 43px;
+  height: 121px;
+  width: 78%;
+  border: 2px solid $main-font-color;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .form-sorting__description {
-    width: 60%;
+    padding-top: 40px;
+    width: 80%;
     font-size: 17px;
     line-height: 30px;
   }
@@ -40,7 +61,7 @@
   }
 
   .form-sorting__bottom-container{
-    max-width: 700px;
+    width: 100%;
     order: 2;
     display: flex;
     flex-direction: row;
@@ -52,22 +73,35 @@
   }
   .form-sorting__btn {
     order: 1;
-    margin-top: 50px;
+    margin-top: 4px;
+    margin-left: 50px;
+    width: 230px;
+    padding-bottom: 16px;
     margin-bottom: 50px;
   }
 
   .form-sorting__important-inputs{
-    margin-top: 65px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 13px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 17px;
+    line-height: 30px;
     order: 2;
+  }
+
+  .form-sorting__textarea {
+    margin-top: 0px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 18px;
   }
 }
 
 @media (min-width: $desctop-width)  {
   .form-sorting__description{
-    max-width: 700px;
-    @include container;
-  }
-  .order-fieldset__container{
+    padding-top: 105px;
     max-width: 700px;
     @include container;
   }
@@ -81,7 +115,6 @@
   }
   .form-sorting__btn {
     margin: 0;
-    margin-top: 50px;
     margin-bottom: 50px;
   }
 
@@ -89,6 +122,7 @@
     padding: 0px;
     margin-left: auto;
     margin-right: 0;
+    margin-top: 10px;
     font-size: 17px;
     line-height: 30px;
   }

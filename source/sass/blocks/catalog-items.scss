@@ -3,11 +3,17 @@
   @include inside-container;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog-items{
+    padding-top: 12px;
+  }
+}
+
 @media (min-width: $desctop-width){
   .catalog-items__list {
     display: flex;
     justify-content: space-between;
-    max-width: 1150px;
+    max-width: 1050px;
     @include container;
     margin-bottom: 30px;
   }
