@@ -225,11 +225,13 @@
     max-width: 1050px;
     padding-bottom: 0px;
     @include central-container;
+    padding-left: 100px;
+    padding-right: 100px;
      &::after{
-      width: 1250px;
+      max-width: 1150px;
       top: -14px;
-      left: -50px;
-      background-size: 1250px 34px;
+      left: 50px;
+      background-size: 1150px 34px;
     }
   }
   .weekly-goods__header{

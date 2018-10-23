@@ -38,7 +38,7 @@ var popupShow = document.querySelector(".popup-show");
 
   };
 
-  // Функция ymaps.ready() будет вызвана, когда
+// Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
     ymaps.ready(function () {
     // Создание карты.
