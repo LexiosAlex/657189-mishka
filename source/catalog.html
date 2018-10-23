@@ -174,7 +174,7 @@
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
           как появляются наши товары.
         </p>
-        <a class="production__btn btn" href="#modal-form">Сделать заказ</a>
+        <a class="production__btn btn popup-show" href="#modal-form">Сделать заказ</a>
       </section>
     </main>
     <footer class="main-footer">
@@ -212,23 +212,23 @@
         </div>
       </div>
     </footer>
-    <div class="overlay">
+<div class="overlay">
       <section class="modal-add-item">
         <form class="modal-add-item__form" id="size-form" method="get" action="https://echo.htmlacademy.ru">
         <h2 class="modal-add-item__title">Добавить в корзину</h2>
         <p class="modal-add-item__size-title">Выберите размер:</p>
-        <ul class="modal-add-item__select">
-          <li class="modal-add-item__item size-list">
-            <input class="size-list__radio" type="radio" name="size-radio" value="size-S" id="s-size-add" checked>
+        <ul class="modal-add-item__select size-list">
+          <li class="modal-add-item__item">
+            <input class="size-list__radio visually-hidden" type="radio" name="size-radio" value="size-S" id="s-size-add" checked>
             <label class="size-list__label" for="s-size-add">S</label>
           </li>
           <li class="modal-add-item__item">
-            <input class="size-list__radio" type="radio" name="size-radio" value="size-M" id="m-size-add">
+            <input class="size-list__radio visually-hidden" type="radio" name="size-radio" value="size-M" id="m-size-add">
             <label class="size-list__label" for="m-size-add">M</label>
           </li>
           <li class="modal-add-item__item">
-            <input class="size-list__radio" type="radio" name="size-radio" value="size-L" id="l-size-add">
-            <label class="size-list__label" for="s-size-add">L</label>
+            <input class="size-list__radio visually-hidden" type="radio" name="size-radio" value="size-L" id="l-size-add">
+            <label class="size-list__label" for="l-size-add">L</label>
           </li>
         </ul>
         <button class="modal-add-item__btn btn" form="size-form" type="submit">Добавить</button>
