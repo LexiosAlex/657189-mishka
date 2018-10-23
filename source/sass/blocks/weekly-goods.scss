@@ -226,8 +226,10 @@
     padding-bottom: 0px;
     @include central-container;
      &::after{
+      width: 1250px;
       top: -14px;
-      background-size: 100% 34px;
+      left: -50px;
+      background-size: 1250px 34px;
     }
   }
   .weekly-goods__header{
