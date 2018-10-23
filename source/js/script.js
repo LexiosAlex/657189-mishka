@@ -1,20 +1,13 @@
 var menuMobile = document.querySelector(".main-nav__wrapper");
 var menuToggle = document.querySelector(".main-nav__toggle");
 var mobileScript = window.matchMedia("all and (max-width: 667px)");
-var orderWeeklyGood = document.querySelector(".weekly-goods__btn");
-var CartBtn = document.querySelector(".good__cart");
 var popup = document.querySelector(".overlay");
+var popupShow = document.querySelector(".popup-show");
 
-  orderWeeklyGood.addEventListener("click", function (evt){
+  popupShow.addEventListener("click", function (evt){
       evt.preventDefault();
       popup.classList.add("overlay-show");
   });
-
-  CartBtn.addEventListener("click", function (evt){
-      evt.preventDefault();
-      popup.classList.add("overlay-show");
-  });
-
 
   popup.addEventListener("click", function (evt) {
       evt.preventDefault();
@@ -35,9 +28,9 @@ var popup = document.querySelector(".overlay");
 
   } else {
 
-  }
+  };
 
-// Функция ymaps.ready() будет вызвана, когда
+  // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
     ymaps.ready(function () {
     // Создание карты.
@@ -68,5 +61,6 @@ var popup = document.querySelector(".overlay");
         iconImageOffset: [-50, -140]
     });
     myMap.geoObjects.add(myPlacemark);
-})
+});
+
 
