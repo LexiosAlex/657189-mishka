@@ -26,20 +26,32 @@
 }
 
 .main-nav__toggle{
-  visibility: hidden;
   position: absolute;
-  right: 22px;
-  top: 25px;
-}
-.main-nav__toggle--off:after{
-  visibility: visible;
+  right: 30px;
+  top: 28px;
   display: block;
-  content: "";
   width: 21px;
   height: 21px;
-  background-image: url(../img/icon-menu-close.svg);
+  background-color: transparent;
+  border: none;
   background-repeat: no-repeat;
   background-size: 21px 21px;
+}
+
+.main-nav__toggle--on {
+  background-image: url(../img/icon-menu-open.svg);
+}
+
+.main-nav__toggle--off {
+  background-image: url(../img/icon-menu-close.svg);
+}
+
+.main-nav__wrapper {
+  display: block;
+}
+
+.main-nav__wrapper--hidden {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
