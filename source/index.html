@@ -279,12 +279,12 @@
           </table>
         </div>
         <div class="contacts__map-container">
+          <picture>
+            <source media="(min-width: 1050px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 668px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map-img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </picture>
           <div class="contacts__map-api" id="map">
-            <picture>
-              <source media="(min-width: 1050px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 668px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-              <img class="contacts__map-img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-            </picture>
           </div>
         </div>
         <div class="contacts__btn-container">
@@ -350,5 +350,7 @@
         </form>
       </section>
     </div>
+    <script  src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
