@@ -5,17 +5,17 @@ var mobileScript = window.matchMedia("all and (max-width: 667px)");
 var popup = document.querySelector(".overlay");
 var popupShow = document.querySelector(".popup-show");
 
-// if (pupupCheck) {
+if (popup.classList.contains('.overlay')) {
   popupShow.addEventListener("click", function (evt){
       evt.preventDefault();
       popup.classList.add("overlay-show");
   });
 
-  popup.onmousedown = function(evt) {
+  popup.onclick = function(evt) {
       evt.preventDefault();
       popup.classList.remove("overlay-show");
     };
-// }
+ }
 
   if (mobileScript.matches) {
     menuMobile.classList.add("main-nav__wrapper--hidden");
