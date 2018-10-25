@@ -88,7 +88,7 @@
 }
 
 .order-fieldset__label--checkbox:hover::after,
-.order-fieldset__label--checkbox:focus+.order-fieldset__label--checkbox::after,
+.order-fieldset__checkbox:focus+.order-fieldset__label--checkbox::after,
 .order-fieldset__label--radio:hover::after,
 .order-fieldset__radio:focus+.order-fieldset__label--radio::after{
   border: 2px solid $theme-color;
@@ -414,9 +414,8 @@
 
   .order-fieldset__container--comment {
     padding-top: 50px;
-    legend{
+    .order-fieldset__legend{
       margin-top: 17px;
-      padding-right: 167px;
     }
   }
 }
@@ -437,7 +436,7 @@
   .order-fieldset__legend {
     padding-right: 0px;
     padding-left: 60px;
-    width: 145px;
+    width: 85px;
     &--type{
       margin-top: 24px;
     }
@@ -515,7 +514,7 @@
     right: 7px;
   }
   .order-fieldset__container--comment{
-    legend{
+    .order-fieldset__legend{
       padding-right: 0px;
       margin-right: 0px;
     }

@@ -56,18 +56,19 @@
   .page-header {
     position: relative;
     background-color: #f1f1f1;
-    padding-bottom: 45px;
+    padding-bottom: 25px;
   }
 
   .page-header::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 1150px;
     height: 34px;
     background-image: url(../img/bg-zigzag-fill.svg);
     background-size: 1150px 34px;
-    bottom: 0px;
-    left: 0px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .page-header__title {

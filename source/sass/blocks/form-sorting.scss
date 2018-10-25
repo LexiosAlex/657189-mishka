@@ -96,15 +96,19 @@
     font-size: 19px;
     font-weight: 400;
     line-height: 18px;
+    margin-right: 0px;
+    margin-left: auto;
+    width: 66%;
   }
 }
 
 @media (min-width: $desctop-width)  {
   .form-sorting__description{
-    padding-top: 105px;
+    padding-top: 125px;
     max-width: 700px;
     @include container;
   }
+
   .form-sorting__bottom-container{
     width: 700px;
     order: 2;
@@ -113,6 +117,7 @@
     flex-wrap: wrap;
     @include container;
   }
+
   .form-sorting__btn {
     margin: 0;
     margin-bottom: 50px;
@@ -125,5 +130,9 @@
     margin-top: 10px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .form-sorting__textarea {
+    width: 100%;
   }
 }

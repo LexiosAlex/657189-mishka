@@ -1,9 +1,11 @@
 var menuMobile = document.querySelector(".main-nav__wrapper");
 var menuToggle = document.querySelector(".main-nav__toggle");
 var mobileScript = window.matchMedia("all and (max-width: 667px)");
+// var pupupCheck = document.getElemntByClassName(".overlay");
 var popup = document.querySelector(".overlay");
 var popupShow = document.querySelector(".popup-show");
 
+// if (pupupCheck) {
   popupShow.addEventListener("click", function (evt){
       evt.preventDefault();
       popup.classList.add("overlay-show");
@@ -13,13 +15,13 @@ var popupShow = document.querySelector(".popup-show");
       evt.preventDefault();
       popup.classList.remove("overlay-show");
     };
-
+// }
 
   if (mobileScript.matches) {
     menuMobile.classList.add("main-nav__wrapper--hidden");
     menuToggle.classList.add("main-nav__toggle--on");
 
-     menuToggle.addEventListener("click", function (event) {
+    menuToggle.addEventListener("click", function (event) {
     event.preventDefault();
 
    if (menuMobile.classList.contains('main-nav__wrapper--hidden')) {

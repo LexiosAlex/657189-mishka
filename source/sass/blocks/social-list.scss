@@ -15,23 +15,33 @@
 .social-list__link {
   display: block;
   position: relative;
+  top: 30px;
 }
 
-.social-list__link:hover .main-footer__social-logo,
-.social-list__link:focus .main-footer__social-logo{
+.social-list__link:hover .social-list__social-logo,
+.social-list__link:focus .social-list__social-logo{
   fill: $theme-color;
 }
 
-.social-list__link:active .main-footer__social-logo{
+.social-list__link:active .social-list__social-logo{
   fill: #46c1ae;
   opacity: 0.3;
+}
+
+.social-list__social-logo {
+  position: relative;
+  fill: $main-font-color;
+}
+
+.social-list__social-logo--fb{
+  top: -5px;
 }
 
 @media (min-width: $tablet-width) {
   .social-list {
     margin: 0px;
     padding-top: 33px;
-    padding-left: 28.3%;
+    padding-left: 110px;
   }
 }
 
@@ -39,6 +49,7 @@
   .social-list {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 22.7%;
+    padding-left: 120px;
+    padding-right: 45px;
   }
 }

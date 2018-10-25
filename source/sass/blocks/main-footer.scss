@@ -19,23 +19,6 @@
   display: none;
 }
 
-.main-footer__social-logo {
-  position: relative;
-  fill: $main-font-color;
-}
-
-.main-footer__social-logo--insta{
-  top: 30px;
-}
-
-.main-footer__social-logo--fb{
-  top: 25px;
-}
-
-.main-footer__social-logo--twitt {
-  top: 30px;
-}
-
 @media (min-width: $tablet-width){
   .main-footer__container{
     display: flex;
@@ -43,9 +26,7 @@
   }
 
   .main-footer__inside-container{
-    width: 80%;
-    padding: 0px;
-    padding-right: 50px;
+    width: 70%;
   }
 
   .main-footer__logo {

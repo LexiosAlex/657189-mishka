@@ -14,22 +14,6 @@
   }
 }
 
-.good:hover .good__info-container,
-.good:focus .good__info-container{
-  opacity: 0.6;
-  .good__cart-icon{
-    opacity: 1;
-    fill: $theme-color;
-  }
-}
-
-.good:active .good__info-container{
-    opacity: 0.3;
-  .good__cart-icon{
-    fill: $theme-color;
-  }
-}
-
 .good__image-container{
   order: 1;
   display: flex;
@@ -52,11 +36,25 @@
   order: 2;
   padding-top: 8px;
   margin-bottom: 0px;
-  color: $main-font-color;
-  font-size: 17px;
-  font-weight: $font-bold;
-  line-height: 24px;
+  a {
+    text-decoration: none;
+    color: $main-font-color;
+    font-size: 17px;
+    font-weight: $font-bold;
+    line-height: 24px;
+  }
 }
+
+.good__title a:hover,
+.good__title a:focus {
+  opacity: 0.6;
+}
+
+.good__title a:active {
+  opacity: 0.3;
+}
+
+
 
 .good__description {
   order: 3;
@@ -81,11 +79,22 @@
   border-top: 1px solid #ececec;
 }
 
-.good__cart-icon{
+.good__cart{
   position: absolute;
   top: 23px;
   right: 2px;
   opacity: 0.2;
+}
+
+.good__cart:hover,
+.good__cart:focus {
+  opacity: 1;
+  fill: $theme-color;
+}
+
+.good__cart:active {
+  opacity: 0.3;
+  fill: $theme-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -96,8 +105,10 @@
   }
 
   .good__title{
-    font-size: 20px;
-    line-height: 24px;
+    a{
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   .good__description{
@@ -144,8 +155,10 @@
 
   .good__title{
     padding-top: 5px;
-    font-size: 20px;
-    line-height: 24px;
+    a {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   .good__bottom {

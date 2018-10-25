@@ -7,7 +7,8 @@
 .catalog-video__btn{
   position: absolute;
   top: 40px;
-  left: 30%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 101px;
   height: 77px;
   background-image: url(../img/icon-play.svg);
@@ -19,8 +20,9 @@
   &:focus{
     transform:
     scale(1.2);
+    left: 43.5%;
   }
-  &:focus{
+  &:active{
     opacity: 0.3;
     transform:
     scale(0.8);
@@ -30,16 +32,17 @@
 .catalog-video__image{
   position: absolute;
   @include img-width;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-width) {
   .catalog-video{
-    width: 668px;
+    width: 100%;
     height: 455px;
   }
   .catalog-video__btn{
     top: 190px;
-    left: 280px;
   }
 }
 
@@ -47,8 +50,5 @@
   .catalog-video{
     width: 682px;
     height: 455px;
-  }
-  .catalog-video__btn{
-    left: 290px;
   }
 }

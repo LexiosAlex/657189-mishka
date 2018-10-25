@@ -62,6 +62,9 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .main-header__logo-image{
+    margin-left: auto;
+  }
   .main-header{
     background: linear-gradient(#ffffff 65%, #f1f1f1 35%);
   }

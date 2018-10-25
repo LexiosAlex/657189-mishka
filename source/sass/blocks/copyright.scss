@@ -2,9 +2,9 @@
   color: $main-font-color;
   font-size: 19px;
   font-weight: $font-bold;
-  line-height: 18px;
-}
+  line-height: 18px;}
 .copyright {
+  text-decoration: none;
   position: relative;
   border-top: 1px solid #e5e5e5;
   min-height: 80px;
@@ -39,14 +39,12 @@
 
 @media (min-width: $tablet-width) {
   .copyright{
-    width: 210px;
+    width: 260px;
     padding-top: 32px;
     margin: 0px;
-    margin-left: auto;
   }
   .copyrgiht__creator{
-    padding-top: 15px;
-    padding-left: 14.7%;
+    padding-left: 80px;
   }
   .copyright__logo-img{
     top: 57px;
@@ -57,9 +55,7 @@
 @media (min-width: $desctop-width){
   .copyrgiht__creator{
     padding-left: 0px;
-    padding-top: 10px;
     padding-right: 57px;
-    margin-left: 0px;
   }
 
   .copyright{

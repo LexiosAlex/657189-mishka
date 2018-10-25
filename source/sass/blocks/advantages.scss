@@ -97,14 +97,14 @@
   }
 
   .advantages__list {
-    width: 668px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .advantages__item{
-    width: 250px;
+    width: 37.5%;
     font-size: 20px;
     line-height: 22px;
     &:nth-child(1){
@@ -125,7 +125,7 @@
     }
     &:nth-child(5){
       margin-top: 30px;
-      width: 300px;
+      width: 45%;
       order: 4;
     }
     &:nth-child(6){
@@ -166,6 +166,7 @@
 
   .advantages__list {
     padding-left: 175px;
+    width: 668px;
   }
   .advantages__item{
     &:nth-child(1){

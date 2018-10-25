@@ -209,18 +209,14 @@
 
   .contacts__map-container {
     margin-top: 52px;
-    height: 462px;
   }
 
   .contacts__btn-container {
     margin-top: 50px;
     margin-bottom: 55px;
   }
-  .contacts__map-img {
-    height: auto;
-    width: auto;
-  }
 }
+
 
   @media (min-width: $desctop-width) {
   .contacts{
@@ -242,11 +238,6 @@
 
   .contacts {
     padding-top: 70px;
-  }
-
-  .contacts__map-img {
-    @include img-width;
-    height: auto;
   }
 
   .contacts__specifications {
@@ -278,7 +269,6 @@
   }
 
   .contacts__map-container{
-    width: 49%;
     margin-top: 45px;
     margin-left: 25px;
     margin-bottom: 100px;
@@ -310,4 +300,5 @@
     bottom: 50px;
     left: 174px;
   }
+
 }
