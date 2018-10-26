@@ -1,5 +1,6 @@
 .form-sorting__description {
   @include inside-container;
+  padding-bottom: 12px;
   width: 242px;
   margin-top: 22px;
   font-weight: $font-normal;
@@ -46,7 +47,6 @@
   .form-sorting__description {
     width: 80%;
     padding-top: 40px;
-
     font-size: 17px;
     line-height: 30px;
   }
