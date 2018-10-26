@@ -242,10 +242,9 @@
       top: 20px;
       right: 0;
       left: 0;
-
-      width: 1050px;
+      margin: 0 auto;
+      max-width: 1050px;
       height: 24px;
-
       background-image: url("../img/bg-zigzag-line.svg");
       background-size: 1050px 24px;
       transform: rotate(180deg);

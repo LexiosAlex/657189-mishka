@@ -9,16 +9,16 @@ var mobileScript = window.matchMedia("all and (max-width: 667px)");
     menuToggle.addEventListener("click", function (event) {
     event.preventDefault();
 
-   if (menuMobile.classList.contains('main-nav__wrapper--hidden')) {
+    if (menuMobile.classList.contains('main-nav__wrapper--hidden')) {
       menuMobile.classList.remove('main-nav__wrapper--hidden');
       menuToggle.classList.remove('main-nav__toggle--on');
       menuToggle.classList.add('main-nav__toggle--off');
     }
-   else {
+    else {
       menuMobile.classList.add('main-nav__wrapper--hidden');
       menuToggle.classList.remove('main-nav__toggle--off');
       menuToggle.classList.add('main-nav__toggle--on');
-   }
+    }
   });
 
   } else {
@@ -75,4 +75,3 @@ var map;
 
     });
   }
-
