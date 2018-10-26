@@ -69,7 +69,7 @@ var map;
     position: new google.maps.LatLng(59.938631, 30.323055),
     map: map,
     draggable:true,
-    icon: "../img/icon-map-pin.svg",
+    icon: "img/icon-map-pin.svg",
     size: new google.maps.Size(85, 140),
     scaledSize: new google.maps.Size(85, 140)
 
