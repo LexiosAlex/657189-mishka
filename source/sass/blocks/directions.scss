@@ -26,7 +26,6 @@
   position: relative;
   display: block;
   width: 100%;
-  padding: 0;
   padding-top: 27px;
   padding-bottom: 30px;
   color: $primary-color;
@@ -34,6 +33,7 @@
   background-color: $theme-color;
 
   span {
+    padding-left: 30px;
     display: block;
     width: 106px;
   }
