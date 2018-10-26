@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
-    <script  src="https://api-maps.yandex.ru/2.1/?apikey=<227779b2-ff5d-4304-bc15-fc57e93a93e0>&lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <svg style="display:none">
@@ -191,7 +190,7 @@
               </tr>
             </table>
             <p class="weekly-goods__price">Цена: 990 руб.</p>
-            <a class="btn weekly-goods__btn popup-show" href="">Заказать</a>
+            <a class="btn weekly-goods__btn" href="">Заказать</a>
           </div>
           <div class="weekly-goods__image-contaner">
             <picture>
@@ -328,7 +327,7 @@
         </div>
       </div>
     </footer>
-    <div class="overlay">
+    <div class="overlay"></div>
       <section class="modal-add-item">
         <form class="modal-add-item__form" id="size-form" method="get" action="https://echo.htmlacademy.ru">
         <h2 class="modal-add-item__title">Добавить в корзину</h2>
@@ -350,7 +349,8 @@
         <button class="modal-add-item__btn btn" form="size-form" type="submit">Добавить</button>
         </form>
       </section>
-    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVqkwpYNhXVEYAjw8zgUpJm9Kasj1M9ZY&callback=initMap">
+    </script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

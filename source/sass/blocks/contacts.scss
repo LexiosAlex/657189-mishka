@@ -227,10 +227,11 @@
     &::after {
       width: 1050px;
       height: 24px;
-      margin-left: 50px;
+      // margin-left: 50px;
       background-image: url("../img/bg-zigzag-line.svg");
       background-size: 1050px 24px;
       transform: rotate(180deg);
+      right: 0px;
       left: 0px;
       top: 20px;
     }

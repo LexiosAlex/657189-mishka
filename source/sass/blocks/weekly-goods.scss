@@ -223,13 +223,13 @@
 
 @media (min-width: $desctop-width) {
   .weekly-goods{
-    max-width: 1050px;
+    max-width: 1150px;
     padding-bottom: 0px;
     @include central-container;
      &::after{
-      width: 1250px;
+      // max-width: 1250px;
       top: -14px;
-      left: -50px;
+      // left: -50px;
       background-size: 1250px 34px;
     }
   }

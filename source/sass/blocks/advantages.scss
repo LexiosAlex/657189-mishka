@@ -149,12 +149,12 @@
     @include central-container;
       &::after {
         width: 1050px;
-        margin-left: 50px;
         background-image: url("../img/bg-zigzag-line.svg");
         background-size: 1050px 24px;
         background-repeat: repeat-x;
         transform: rotate(180deg);
         left: 0px;
+        right: 0px;
         top: -40px;
     }
   }
