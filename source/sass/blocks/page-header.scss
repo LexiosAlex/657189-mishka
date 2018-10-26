@@ -4,83 +4,88 @@
 }
 
 .page-header__title {
-  margin-top: 0px;
-  padding-left:10px;
+  width: 250px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 72px;
   padding-bottom: 76px;
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  color: $main-font-color;
-  font-size: 27px;
+  padding-left: 10px;
   font-weight: $font-bold;
+  font-size: 27px;
   line-height: 30px;
-  &--form{
-    padding-left: 0px;
+  color: $main-font-color;
+
+  &--form {
     width: 250px;
+    padding-left: 0;
   }
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .page-header {
     position: relative;
-    background-color: #f1f1f1;
     padding-bottom: 16px;
+    background-color: #f1f1f1;
   }
+
   .page-header::after {
     content: "";
     position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 24px;
-    background-image: url(../img/bg-zigzag-fill.svg);
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-size: 770px 24px;
-    bottom: 0px;
-    left: 0px;
   }
+
   .page-header__title {
-    margin-bottom: 0px;
-    padding-left: 0px;
+    width: 376px;
+    margin-bottom: 0;
     padding-top: 25px;
+    padding-left: 0;
     font-size: 43px;
     line-height: 50px;
-    width: 376px;
-    &--form{
+
+    &--form {
+      width: 400px;
       padding-top: 23px;
       padding-left: 6px;
-      width: 400px;
     }
   }
 }
 
-@media (min-width: $desctop-width){
+@media (min-width: $desctop-width) {
   .page-header {
     position: relative;
-    background-color: #f1f1f1;
     padding-bottom: 25px;
+    background-color: #f1f1f1;
   }
 
   .page-header::after {
     content: "";
     position: absolute;
-    width: 1150px;
-    height: 34px;
-    background-image: url(../img/bg-zigzag-fill.svg);
-    background-size: 1150px 34px;
     bottom: -20px;
     left: 50%;
+    width: 1150px;
+    height: 34px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: 1150px 34px;
     transform: translateX(-50%);
   }
 
   .page-header__title {
-    margin-bottom: 0px;
-    padding-left: 14px;
+    width: 476px;
+    margin-bottom: 0;
     padding-top: 50px;
+    padding-left: 14px;
+
     font-size: 53px;
     line-height: 57px;
-    width: 476px;
-    &--form{
+
+    &--form {
       width: 500px;
     }
   }
 }
-

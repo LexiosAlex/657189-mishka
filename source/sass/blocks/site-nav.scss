@@ -1,21 +1,20 @@
 .site-nav__item {
   display: block;
-
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   a {
-    text-decoration: none;
-    color: $main-font-color;
-    font-size: 17px;
-    font-weight: $font-bold;
-    line-height: 24px;
     display: flex;
     width: 70%;
-    margin-left: auto;
     margin-right: auto;
-    padding-left: 50px;
+    margin-left: auto;
     padding-top: 26px;
     padding-bottom: 28px;
+    padding-left: 50px;
+    font-weight: $font-bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: $main-font-color;
+    text-decoration: none;
 
     &:hover,
     &:focus {
@@ -30,56 +29,58 @@
 
 
 @media (min-width: $tablet-width) {
-  .site-nav{
-    width: auto;
-    order: 2;
+  .site-nav {
     display: flex;
     flex-grow: 1;
     flex-direction: row;
+    order: 2;
+    width: auto;
   }
 
-  .site-nav__item{
+  .site-nav__item {
     padding-left: 35px;
-    box-shadow: none;
     border: none;
+    box-shadow: none;
 
     a {
-      margin: 0;
-      padding-top: 20px;
-      padding-left: 0px;
-      font-size: 15px;
-      line-height: 24px;
       display: inline-block;
       width: 100%;
+      margin: 0;
+      padding-top: 20px;
+      padding-left: 0;
+      font-size: 15px;
+      line-height: 24px;
     }
-    &:first-child{
-      padding: 0px;
+
+    &:first-child {
+      padding: 0;
       padding-left: 50px;
     }
   }
 }
 
-@media (min-width: $desctop-width){
-  .site-nav{
+@media (min-width: $desctop-width) {
+  .site-nav {
     order: 1;
-    width: 50%;
-    border-bottom: 1px solid #ececec;
-    padding-right: 17%;
     width: 33%;
+    padding-right: 17%;
+    border-bottom: 1px solid #ececec;
   }
 
-  .site-nav__item{
+  .site-nav__item {
     width: 170px;
     box-shadow: none;
+
     a {
       margin: 0;
       padding-top: 30px;
       font-size: 17px;
       line-height: 24px;
     }
-    &:nth-child(1){
-      padding-left: 0px;
+
+    &:nth-child(1) {
       padding-right: 13px;
+      padding-left: 0;
       border-right: 1px solid #ececec;
     }
   }

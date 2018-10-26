@@ -1,22 +1,23 @@
 .directions__info {
-  font-size: 27px;
-  font-weight: $font-bold;
-  line-height: 30px;
+  width: 250px;
   margin: 0;
-  padding-top: 72px;
   margin-right: auto;
   margin-left: auto;
-  width: 250px;
+  padding-top: 72px;
+  font-weight: $font-bold;
+  font-size: 27px;
+  line-height: 30px;
   text-align: center;
 }
 
 .directions__list {
   @include list-unstyling;
+  @include inside-container;
   width: 100%;
   margin-top: 120px;
   list-style: none;
-  font-size: 19px;
   font-weight: $font-bold;
+  font-size: 19px;
   line-height: 24px;
   color: $primary-color;
 }
@@ -24,13 +25,13 @@
 .directions__link {
   position: relative;
   display: block;
+  width: 100%;
   padding: 0;
   padding-top: 27px;
   padding-bottom: 30px;
-  background-color: $theme-color;
-  width: 100%;
-  text-decoration: none;
   color: $primary-color;
+  text-decoration: none;
+  background-color: $theme-color;
 
   span {
     display: block;
@@ -42,12 +43,8 @@
     margin-top: -10px;
     padding-bottom: 40px;
 
-    span {
-
-    }
     .directions__icon {
       opacity: 0.7;
-
     }
   }
 
@@ -55,6 +52,7 @@
     span {
       color: $btn-active-color;
     }
+
     .directions__icon {
       opacity: 0.3;
     }
@@ -63,15 +61,17 @@
 
 .directions__icon {
   position: absolute;
-  fill: #149080;
   opacity: 0.5;
-  &--interior{
-    right: 35px;
+  fill: #149080;
+
+  &--interior {
     top: 25px;
+    right: 35px;
   }
-  &--toy{
-    right: 27px;
+
+  &--toy {
     top: 22px;
+    right: 27px;
   }
 }
 
@@ -83,43 +83,41 @@
 
 .directions {
   margin-top: 1px;
+  background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% -10%;
-  background-color: #f9f9f9;
+
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
     background-size: 575px 373px;
   }
 }
-.directions__list{
-  span{
-    @include inside-container;
-  }
-}
-
 
 @media (min-width: $tablet-width) {
   .directions {
     margin-top: 0;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 95%;
+
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
       background-size: 1150px 746px;
     }
   }
-  .directions__info{
-    padding-top: 80px;
+
+  .directions__info {
     width: 500px;
     margin-bottom: 376px;
-    color: $main-font-color;
-    font-size: 43px;
+    padding-top: 80px;
     font-weight: $font-bold;
+    font-size: 43px;
     line-height: 50px;
+    color: $main-font-color;
   }
+
   .directions__list {
     @include inside-container;
     display: flex;
@@ -133,41 +131,46 @@
     width: 50%;
   }
 
-  .directions__link{
+  .directions__link {
     font-size: 20px;
     line-height: 30px;
-    span{
-    padding-left: 35px;
+
+    span {
+      padding-left: 35px;
     }
   }
+
   .directions__icon {
     position: absolute;
-    fill: #149080;
     opacity: 0.5;
-    &--interior{
-      right: 35px;
+    fill: #149080;
+
+    &--interior {
       top: 30px;
+      right: 35px;
     }
-    &--toy{
-      right: 35px;
+
+    &--toy {
       top: 30px;
+      right: 35px;
     }
   }
 }
 
 @media (min-width: $desctop-width) {
-  .directions__info{
-    padding-top: 110px;
-    margin-bottom: 360px;
+  .directions__info {
     width: 630px;
+    margin-bottom: 360px;
+    padding-top: 110px;
     font-size: 53px;
     line-height: 57px;
   }
+
   .directions__list {
-    max-width: 1050px;
     @include central-container;
-    span{
-      padding-left: 0px;
+    max-width: 1050px;
+
+    span {
       padding-left: 37px;
     }
   }

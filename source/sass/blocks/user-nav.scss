@@ -1,25 +1,25 @@
 .user-nav__item {
   display: block;
-
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   a {
     position: relative;
-    text-decoration: none;
-    color: $main-font-color;
     display: flex;
     width: 70%;
-    margin-left: auto;
     margin-right: auto;
-    padding-left: 50px;
+    margin-left: auto;
     padding-top: 27px;
     padding-bottom: 28px;
+    padding-left: 50px;
+    color: $main-font-color;
+    text-decoration: none;
 
     &:hover,
     &:focus {
       color: $link-hover-color;
+
       .user-nav__search-icon,
-      .user-nav__cart-icon{
+      .user-nav__cart-icon {
         opacity: 1;
         fill: $theme-color;
       }
@@ -27,8 +27,9 @@
 
     &:active {
       color: $link-active-color;
+
       .user-nav__search-icon,
-      .user-nav__cart-icon{
+      .user-nav__cart-icon {
         opacity: 0.3;
         fill: $theme-color;
       }
@@ -36,130 +37,140 @@
   }
 }
 
-.user-nav__delivery{
+.user-nav__delivery {
   display: none;
 }
+
 .user-nav__cart-icon {
   position: absolute;
-  display: block;
   top: 30px;
   left: 8px;
-  fill: $main-font-color;
-  opacity: 0.2;
-}
-.user-nav__search-icon{
-  position: absolute;
   display: block;
-  top: 32px;
-  left: 8px;
-  fill: $main-font-color;
   opacity: 0.2;
+  fill: $main-font-color;
 }
 
-@media (min-width: $tablet-width){
-  .user-nav{
-    width: 100%;
+.user-nav__search-icon {
+  position: absolute;
+  top: 32px;
+  left: 8px;
+  display: block;
+  opacity: 0.2;
+  fill: $main-font-color;
+}
+
+@media (min-width: $tablet-width) {
+  .user-nav {
     display: flex;
     flex-direction: row;
-    margin-left: auto;
+    width: 100%;
     margin-right: 0;
+    margin-left: auto;
     border-bottom: 1px solid #ececec;
   }
 
-  .user-nav__item{
+  .user-nav__item {
     position: relative;
-    box-shadow: none;
     border: 1px solid #ececec;
-    border-bottom: none;
     border-top: none;
+    border-bottom: none;
+    box-shadow: none;
+
     a {
-      padding-left: 0px;
+      width: 50%;
       padding-top: 32px;
       padding-bottom: 30px;
-      width: 50%;
+      padding-left: 0;
     }
   }
 
   .user-nav__search {
     width: 82px;
+    margin-right: 0;
     margin-left: auto;
-    margin-right: 0px;
   }
 
   .user-nav__search-link {
     width: 100%;
-    span{
-    display: none;
+
+    span {
+      display: none;
     }
   }
 
-  .user-nav__cart{
+  .user-nav__cart {
+    width: 265px;
     margin: 0;
     margin-right: 0;
-    border-left: none;
-    border-right: none;
-    width: 265px;
     padding-right: 50px;
+    border-right: none;
+    border-left: none;
+
     a {
-      padding-left: 50px;
-      margin: 0;
       width: 184px;
+      margin: 0;
       margin-left: auto;
+      padding-left: 50px;
     }
   }
 
-  .user-nav__delivery{
-    margin: 0;
-    padding-bottom: 30px;
+  .user-nav__delivery {
     display: block;
-    align-self: flex-end;
-    margin-left: auto;
-    width: auto;
-    padding-right: 50px;
     order: 4;
-    color: $loghten-font;
-    font-size: 15px;
+    align-self: flex-end;
+    width: auto;
+    margin: 0;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-bottom: 30px;
     font-weight: $font-normal;
+    font-size: 15px;
     line-height: 24px;
+    color: $loghten-font;
   }
+
   .user-nav__cart-icon {
     top: 35px;
-    left: 0px;
+    left: 0;
   }
-  .user-nav__search-icon{
+
+  .user-nav__search-icon {
     top: 35px;
     left: 12px;
   }
 }
 
-@media (min-width: $desctop-width){
-  .user-nav{
-    margin-left: auto;
-    width: 350px;
+@media (min-width: $desctop-width) {
+  .user-nav {
     order: 2;
-    padding-left: 0px;
-    // flex-wrap: nowrap;
+    width: 350px;
+    margin-left: auto;
+    padding-left: 0;
   }
+
   .user-nav__search {
     width: 82px;
-    margin-left: auto;
     margin-right: 0;
+    margin-left: auto;
   }
-  .user-nav__cart{
+
+  .user-nav__cart {
+    width: 265px;
     margin: 0;
     margin-right: 0;
     padding-right: 0;
-    border-left: none;
     border-right: none;
-    width: 265px;
+    border-left: none;
+
     a {
-      padding-left: 50px;
-      margin: 0;
       width: 184px;
+      margin: 0;
       margin-left: auto;
+      padding-left: 50px;
     }
   }
-  .user-nav__delivery{
+
+  .user-nav__delivery {
     @include inside-container;
   }
 }

@@ -1,49 +1,49 @@
 .main-nav {
   position: relative;
-  background-color: $primary-color;
   color: $main-font-color;
+  background-color: $primary-color;
 }
 
 .main-nav__list {
   @include list-unstyling;
   list-style: none;
-  color: $main-font-color;
   font-weight: $font-bold;
+  color: $main-font-color;
 }
 
 .main-nav__logo-container {
   position: relative;
 }
 
-.main-nav__stock{
+.main-nav__stock {
   display: none;
 }
 
-.main-nav__toggle-contatainer{
+.main-nav__toggle-contatainer {
   position: relative;
   display: block;
   min-height: 80px;
 }
 
-.main-nav__toggle{
+.main-nav__toggle {
   position: absolute;
-  right: 30px;
   top: 28px;
+  right: 30px;
   display: block;
   width: 21px;
   height: 21px;
   background-color: transparent;
-  border: none;
   background-repeat: no-repeat;
   background-size: 21px 21px;
+  border: none;
 }
 
 .main-nav__toggle--on {
-  background-image: url(../img/icon-menu-open.svg);
+  background-image: url("../img/icon-menu-open.svg");
 }
 
 .main-nav__toggle--off {
-  background-image: url(../img/icon-menu-close.svg);
+  background-image: url("../img/icon-menu-close.svg");
 }
 
 .main-nav__wrapper {
@@ -55,47 +55,48 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav{
-    max-width: 1150px;
+  .main-nav {
     display: block;
+    max-width: 1150px;
     background: linear-gradient(#ffffff 55%, #f1f1f1 45%);
   }
 
-  .main-nav--index{
+  .main-nav--index {
     background: linear-gradient(#ffffff 55%, #f9f9f9 45%);
   }
 
-  .main-nav__toggle-contatainer{
+  .main-nav__toggle-contatainer {
     display: none;
   }
 
-  .main-nav__wrapper{
-    max-width: 1150px;
+  .main-nav__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    max-width: 1150px;
   }
 
-  .main-nav__list{
-    display:flex;
+  .main-nav__list {
+    display: flex;
     flex-wrap: wrap;
   }
 
-  .main-nav__toggle{
+  .main-nav__toggle {
     display: none;
   }
 }
 
-@media (min-width: $desctop-width){
-  .main-nav{
+@media (min-width: $desctop-width) {
+  .main-nav {
     @include central-container;
     background: linear-gradient(#ffffff 65%, #f1f1f1 35%);
   }
-  .main-nav--index{
+
+  .main-nav--index {
     background: linear-gradient(#ffffff 65%, #f9f9f9 35%);
   }
-  .main-nav__list{
+
+  .main-nav__list {
     @include inside-container;
   }
 
@@ -111,4 +112,3 @@
     display: flex;
   }
 }
-
