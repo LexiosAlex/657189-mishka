@@ -22,13 +22,13 @@ var menuToggle = document.querySelector(".main-nav__toggle");
 var popup = document.querySelector(".overlay");
 var modal = document.querySelector(".modal-add-item");
 var WeeklyGood = document.querySelector(".weekly-goods__btn");
-var CatalogBtns = document.querySelectorAll(".popup-show");
+var CatalogBtns = document.querySelectorAll(".popup--show");
 
   if (WeeklyGood) {
     WeeklyGood.addEventListener("click", function(event) {
       event.preventDefault();
-      modal.classList.add("modal-show");
-      popup.classList.add("overlay-show");
+      modal.classList.add("modal--show");
+      popup.classList.add("overlay--show");
     });
   }
 
@@ -36,17 +36,17 @@ var CatalogBtns = document.querySelectorAll(".popup-show");
     for (var i = 0; i < CatalogBtns.length; i++) {
       CatalogBtns[i].addEventListener("click", function(event) {
         event.preventDefault();
-        modal.classList.add("modal-show");
-        popup.classList.add("overlay-show");
+        modal.classList.add("modal--show");
+        popup.classList.add("overlay--show");
       });
     }
   }
 
   if (popup) {
     popup.addEventListener("click", function () {
-      if (popup.classList.contains("overlay-show")) {
-        modal.classList.remove("modal-show");
-        popup.classList.remove("overlay-show");
+      if (popup.classList.contains("overlay--show")) {
+        modal.classList.remove("modal--show");
+        popup.classList.remove("overlay--show");
       }
     });
   }
