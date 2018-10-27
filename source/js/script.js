@@ -22,7 +22,7 @@ var menuToggle = document.querySelector(".main-nav__toggle");
 var popup = document.querySelector(".overlay");
 var modal = document.querySelector(".modal");
 var WeeklyGood = document.querySelector(".weekly-goods__btn");
-var CatalogBtns = document.querySelectorAll(".good__btn");
+var CatalogBtns = document.querySelectorAll(".good__cart");
 
   if (WeeklyGood) {
     WeeklyGood.addEventListener("click", function(event) {
