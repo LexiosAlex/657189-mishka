@@ -4,17 +4,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-items{
+  .catalog-items {
     padding-top: 12px;
   }
 }
 
-@media (min-width: $desctop-width){
+@media (min-width: $desctop-width) {
   .catalog-items__list {
+    @include container;
     display: flex;
     justify-content: space-between;
     max-width: 1050px;
-    @include container;
     margin-bottom: 30px;
+    padding-top: 20px;
   }
 }

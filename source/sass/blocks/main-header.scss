@@ -1,72 +1,75 @@
 .main-header {
   position: relative;
-  color: $main-font-color;
-  background-color: $primary-color;
   font-size: 17px;
   line-height: 24px;
-  background-color: transparent;
-}
-
-.main-header__logo {
-  z-index: 1;
-  position: absolute;
-}
-
-.main-header__logo-image {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.main-header{
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  color: $main-font-color;
   background: linear-gradient(#ffffff 50%, #f1f1f1 50%);
-}
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
-.main-header--index{
-  background: linear-gradient(#ffffff 50%, #f9f9f9 50%);
+  &--index {
+    background: linear-gradient(#ffffff 50%, #f9f9f9 50%);
+  }
 }
 
 .main-header__logo {
+  position: absolute;
+  z-index: 1;
+
   top: 22px;
   right: 50%;
   left: 36%;
+
   &:hover,
   &:focus {
     opacity: 0.6;
   }
-  &:active{
+
+  &:active {
     opacity: 0.3;
   }
 }
 
-@media (min-width: $tablet-width){
-  .main-header{
+.main-header__logo-image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
     box-shadow: none;
   }
+
   .main-header__logo {
     left: 6.2%;
   }
+
   .main-header__logo-image {
-    margin-left: 0px;
-    margin-right: auto;
     display: block;
+    margin-right: auto;
+    margin-left: 0;
   }
 }
-@media (min-width: $desctop-width){
+
+@media (min-width: $desctop-width) {
   .main-header__logo {
     top: 7px;
-    width: 160px;
-    display: block;
-    text-align: center;
     left: 50%;
+    display: block;
+    width: 160px;
+    text-align: center;
     transform: translateX(-50%);
   }
-  .main-header{
-    background: linear-gradient(#ffffff 65%, #f1f1f1 35%);
+
+  .main-header__logo-image {
+    margin-left: auto;
   }
 
-  .main-header--index{
-    background: linear-gradient(#ffffff 65%, #f9f9f9 35%);
+  .main-header {
+    background: linear-gradient(#ffffff 65%, #f1f1f1 35%);
+
+    &--index {
+      background: linear-gradient(#ffffff 65%, #f9f9f9 35%);
+    }
   }
 }
