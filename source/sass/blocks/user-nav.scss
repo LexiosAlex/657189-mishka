@@ -37,10 +37,6 @@
   }
 }
 
-.user-nav__delivery {
-  display: none;
-}
-
 .user-nav__cart-icon {
   position: absolute;
   top: 30px;
@@ -114,21 +110,6 @@
     }
   }
 
-  .user-nav__delivery {
-    display: block;
-    order: 4;
-    align-self: flex-end;
-    width: auto;
-    margin: 0;
-    margin-left: auto;
-    padding-right: 50px;
-    padding-bottom: 30px;
-    font-weight: $font-normal;
-    font-size: 15px;
-    line-height: 24px;
-    color: $loghten-font;
-  }
-
   .user-nav__cart-icon {
     top: 35px;
     left: 0;
@@ -168,9 +149,5 @@
       margin-left: auto;
       padding-left: 50px;
     }
-  }
-
-  .user-nav__delivery {
-    @include inside-container;
   }
 }

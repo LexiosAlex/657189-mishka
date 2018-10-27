@@ -19,6 +19,10 @@
   display: none;
 }
 
+.main-nav__delivery {
+  display: none;
+}
+
 .main-nav__toggle-contatainer {
   position: relative;
   display: block;
@@ -69,6 +73,21 @@
     display: none;
   }
 
+  .main-nav__delivery {
+    display: block;
+    order: 4;
+    align-self: flex-end;
+    width: auto;
+    margin: 0;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    font-weight: $font-normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: $loghten-font;
+  }
+
   .main-nav__wrapper {
     display: flex;
     flex-direction: row;
@@ -110,5 +129,9 @@
   .main-nav__stock {
     @include list-unstyling;
     display: flex;
+  }
+
+  .main-nav__delivery {
+    @include inside-container;
   }
 }
