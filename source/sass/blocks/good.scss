@@ -34,6 +34,7 @@
 
 .good__title {
   order: 2;
+  margin-top: 9px;
   margin-bottom: 0;
   padding-top: 8px;
 
@@ -104,6 +105,8 @@
   }
 
   .good__title {
+    margin-top: 9px;
+    padding-top: 5px;
     a {
       font-size: 20px;
       line-height: 24px;
@@ -157,12 +160,17 @@
   }
 
   .good__title {
+    margin-top: 15px;
     padding-top: 5px;
 
     a {
       font-size: 20px;
       line-height: 24px;
     }
+  }
+
+  .good__description--toys-cart {
+    margin-bottom: 10px;
   }
 
   .good__bottom {

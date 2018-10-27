@@ -1,8 +1,6 @@
 var menuMobile = document.querySelector(".main-nav__wrapper");
 var menuToggle = document.querySelector(".main-nav__toggle");
-var mobileScript = window.matchMedia("all and (max-width: 667px)");
 
-  if (mobileScript.matches) {
     menuMobile.classList.add("main-nav__wrapper--hidden");
     menuToggle.classList.add("main-nav__toggle--on");
 
@@ -20,10 +18,6 @@ var mobileScript = window.matchMedia("all and (max-width: 667px)");
       menuToggle.classList.add('main-nav__toggle--on');
     }
   });
-
-  } else {
-
-  };
 
 var popup = document.querySelector(".overlay");
 var modal = document.querySelector(".modal-add-item");
