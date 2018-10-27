@@ -1,4 +1,4 @@
-.modal-add-item {
+.modal {
   position: fixed;
   top: 30%;
   z-index: 10;
@@ -10,7 +10,7 @@
   cursor: default;
 }
 
-.modal-add-item__title {
+.modal__title {
   width: 150px;
   margin-top: 0;
   margin-right: auto;
@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-.modal-add-item__size-title {
+.modal__size-title {
   width: 136px;
   margin-top: 10px;
   margin-right: auto;
@@ -38,11 +38,11 @@
   color: $loghten-font;
 }
 
-.modal-add-item__select {
+.modal__select {
   @include list-unstyling;
 }
 
-.modal-add-item__btn {
+.modal__btn {
   display: block;
   width: 81.25%;
   margin-right: auto;
@@ -57,38 +57,38 @@
 }
 
 @media (min-width: $tablet-width) {
-  .modal-add-item {
+  .modal {
     right: 12%;
     left: 12%;
     display: none;
     width: 566px;
   }
 
-  .modal-add-item__title {
+  .modal__title {
     width: 62.7%;
     font-size: 30px;
     line-height: 57px;
   }
 
-  .modal-add-item__size-title {
+  .modal__size-title {
     width: 62.7%;
     margin-top: 15px;
     font-size: 17px;
     text-align: center;
   }
 
-  .modal-add-item__select {
+  .modal__select {
     width: 62.7%;
   }
 
-  .modal-add-item__btn {
+  .modal__btn {
     width: 62.7%;
     margin-top: 25px;
   }
 }
 
 @media (min-width: $desctop-width) {
-  .modal-add-item {
+  .modal {
     left: 50%;
     transform: translateX(-50%);
   }

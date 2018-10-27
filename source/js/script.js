@@ -20,9 +20,9 @@ var menuToggle = document.querySelector(".main-nav__toggle");
   });
 
 var popup = document.querySelector(".overlay");
-var modal = document.querySelector(".modal-add-item");
+var modal = document.querySelector(".modal");
 var WeeklyGood = document.querySelector(".weekly-goods__btn");
-var CatalogBtns = document.querySelectorAll(".popup--show");
+var CatalogBtns = document.querySelectorAll(".good__btn");
 
   if (WeeklyGood) {
     WeeklyGood.addEventListener("click", function(event) {
