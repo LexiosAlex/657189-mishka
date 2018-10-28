@@ -23,8 +23,10 @@
 }
 
 .directions__link {
+  padding-left: 30px;
+  padding-right: 30px;
   position: relative;
-  display: block;
+  display: flex;
   width: 100%;
   padding-top: 27px;
   padding-bottom: 30px;
@@ -33,7 +35,7 @@
   background-color: $theme-color;
 
   span {
-    padding-left: 30px;
+    // padding-left: 30px;
     display: block;
     width: 106px;
   }
@@ -136,9 +138,9 @@
     font-size: 20px;
     line-height: 30px;
 
-    span {
-      padding-left: 35px;
-    }
+    // span {
+    //   padding-left: 35px;
+    // }
   }
 
   .directions__icon {
@@ -168,13 +170,17 @@
   }
 
   .directions__list {
-    padding-left: 0px;
-    padding-right: 0px;
     @include central-container;
+    padding-left: 0;
+    padding-right: 0;
     max-width: 1050px;
 
-    span {
-      padding-left: 37px;
-    }
+    // span {
+    //   padding-left: 37px;
+    // }
+  }
+  .directions__link {
+    padding-left: 37px;
+    padding-right: 35px;
   }
 }
