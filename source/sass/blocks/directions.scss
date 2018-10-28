@@ -128,7 +128,8 @@
 
   .directions__item {
     display: flex;
-    width: 50%;
+    flex-grow: 1;
+    max-width: 50%;
   }
 
   .directions__link {
@@ -167,6 +168,8 @@
   }
 
   .directions__list {
+    padding-left: 0px;
+    padding-right: 0px;
     @include central-container;
     max-width: 1050px;
 
