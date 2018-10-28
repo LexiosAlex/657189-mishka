@@ -15,12 +15,12 @@
 }
 
 .good__image-container {
-  display: flex;
   order: 1;
 }
 
 .good__image {
   @include img-width;
+  background-color: #e9e9e9;
 }
 
 .good__info-container {
@@ -107,6 +107,7 @@
   .good__title {
     margin-top: 15px;
     padding-top: 5px;
+
     a {
       font-size: 20px;
       line-height: 24px;
@@ -181,5 +182,9 @@
     &--toys-cart {
       margin-top: 0;
     }
+  }
+
+  .good__cart-icon {
+    overflow: hidden;
   }
 }

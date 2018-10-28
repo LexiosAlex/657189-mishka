@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans-regular.woff2">
+    <link rel="preload" href="fonts/opensans-bold.woff2">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js"></script>
   </head>
@@ -67,14 +69,12 @@
         <p class="directions__info">Милые штуки ручной работы&nbsp;для дома</p>
         <ul class="directions__list">
           <li class="directions__item">
-            <a class="directions__link" href="">
-              <svg class="directions__icon directions__icon--interior" width="40" height="62"><use xlink:href="#icon-interior"></use></svg>
+            <a class="directions__link directions__link--interior" href="">
               <span>Предметы интерьера</span>
             </a>
           </li>
           <li class="directions__item">
-            <a class="directions__link" href="">
-              <svg class="directions__icon directions__icon--toy" width="60" height="60"><use xlink:href="#icon-toy"></use></svg>
+            <a class="directions__link directions__link--toy" href="">
               <span>Детские игрушки</span>
             </a>
           </li>
@@ -282,6 +282,6 @@
     </section>
     <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVqkwpYNhXVEYAjw8zgUpJm9Kasj1M9ZY&callback=initMap">
     </script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>

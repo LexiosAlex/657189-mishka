@@ -336,7 +336,7 @@
   .order-fieldset__checkbox:checked + .order-fieldset__label--checkbox::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 18px;
     width: 40px;
     height: 40px;

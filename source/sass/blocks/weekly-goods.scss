@@ -97,6 +97,7 @@
   position: absolute;
   bottom: 125px;
   order: 5;
+  background-color: #f1f1f1;
 }
 
 @media (min-width: $tablet-width) {
@@ -214,6 +215,9 @@
 
     &::after {
       top: -14px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
       background-size: 1250px 34px;
     }
   }
