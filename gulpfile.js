@@ -18,12 +18,6 @@ var pump = require('pump');
 var htmlmin = require('gulp-htmlmin');
 var del = require("del");
 
-gulp.task("htmlminify", () => {
-  return gulp.src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build/'));
-});
-
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -59,11 +53,19 @@ gulp.task("refresh", function(done) {
 
 gulp.task("compressjs", function (cb) {
   pump([
-        gulp.src('source/js/script.js'),
+        gulp.src("source/js/script.js"),
         jsminify(),
         rename("script.min.js"),
         gulp.dest("build/js/")
     ],
+    cb
+  ),
+  pump([
+      gulp.src("source/js/picturefill.js"),
+      jsminify(),
+      rename("picturefill.min.js"),
+      gulp.dest("build/js/")
+  ],
     cb
   );
 });
@@ -98,6 +100,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
@@ -118,5 +121,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "compressjs", "css", "sprite", "html", "htmlminify"));
+gulp.task("build", gulp.series("clean", "copy", "compressjs", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
