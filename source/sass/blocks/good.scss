@@ -20,6 +20,7 @@
 
 .good__image {
   @include img-width;
+  background-color: #e9e9e9;
 }
 
 .good__info-container {
@@ -183,7 +184,7 @@
     }
   }
 
-  .good__cart-icon{
+  .good__cart-icon {
     overflow: hidden;
   }
 }
