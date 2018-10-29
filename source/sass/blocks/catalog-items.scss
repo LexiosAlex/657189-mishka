@@ -13,9 +13,13 @@
   .catalog-items__list {
     @include container;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1050px;
     margin-bottom: 30px;
     padding-top: 20px;
+
+    li:nth-child(3n){
+      margin-right: 0;
+    }
   }
 }

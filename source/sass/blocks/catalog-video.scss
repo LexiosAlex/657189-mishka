@@ -1,4 +1,4 @@
-.catalog-video {
+.catalog-video__media {
   width: 260px;
   height: 150px;
 }
@@ -38,7 +38,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-video {
+  .catalog-video__media {
     width: 100%;
     height: 455px;
   }
@@ -49,7 +49,7 @@
 }
 
 @media (min-width: $desctop-width) {
-  .catalog-video {
+  .catalog-video__media {
     width: 682px;
     height: 455px;
   }

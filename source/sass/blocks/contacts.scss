@@ -152,6 +152,8 @@
   .contacts__title {
     @include inside-container;
     position: relative;
+    margin-top: 38px;
+    left: -5px;
     padding: 0;
     font-size: 43px;
     line-height: 50px;
@@ -159,13 +161,14 @@
 
   .contacts__flag-icon {
     position: absolute;
-    top: -12px;
-    right: 53px;
+    top: -15px;
+    right: 48px;
     display: block;
   }
 
   .contacts__specifications {
-    @include inside-container;
+    padding-right: 50px;
+    padding-left: 45px;
     width: 100%;
   }
 
@@ -220,7 +223,7 @@
     &--second {
       width: 320px;
       padding-top: 10px;
-      padding-left: 40px;
+      padding-left: 45px;
     }
   }
 
@@ -259,7 +262,7 @@
     tbody {
       flex-direction: column;
       width: 400px;
-      padding-left: 120px;
+      padding-left: 125px;
     }
   }
 
@@ -292,6 +295,7 @@
     margin-bottom: 30px;
     padding-top: 10px;
     padding-left: 170px;
+    left: 0;
     font-size: 53px;
     line-height: 57px;
   }

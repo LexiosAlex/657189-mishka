@@ -32,6 +32,7 @@
 }
 
 .order-fieldset__legend {
+  display: block;
   position: relative;
   width: 100%;
   margin-top: 12px;
@@ -183,17 +184,13 @@
 
 .order-fieldset__container--contact {
   padding-bottom: 20px;
-
-  label {
-    position: absolute;
-  }
 }
 
 .order-fieldset__icon-input-contaner {
   position: relative;
 }
 
-.order-fieldset--phone-input {
+.order-fieldset__phone-input {
   z-index: 2;
   padding-top: 7px;
   padding-bottom: 12px;
@@ -203,7 +200,7 @@
   background-color: transparent;
 }
 
-.order-fieldset--email-input {
+.order-fieldset__email-input {
   z-index: 2;
   padding-top: 15px;
   padding-bottom: 14px;
@@ -216,22 +213,22 @@
   opacity: 0.2;
 }
 
-.order-fieldset--phone-icon {
+.order-fieldset__phone-icon {
   top: 6px;
   right: 11px;
 }
 
-.order-fieldset--mail-icon {
+.order-fieldset__mail-icon {
   top: 8px;
   right: 7px;
 }
 
-.order-fieldset--email-input:hover + .order-fieldset--mail-icon,
-.order-fieldset--email-input:focus + .order-fieldset--mail-icon,
-.order-fieldset--email-input:active + .order-fieldset--mail-icon,
-.order-fieldset--phone-input:hover + .order-fieldset--phone-icon,
-.order-fieldset--phone-input:focus + .order-fieldset--phone-icon,
-.order-fieldset--phone-input:active + .order-fieldset--phone-icon {
+.order-fieldset__email-input:hover + .order-fieldset__mail-icon,
+.order-fieldset__email-input:focus + .order-fieldset__mail-icon,
+.order-fieldset__email-input:active + .order-fieldset__mail-icon,
+.order-fieldset__phone-input:hover + .order-fieldset__phone-icon,
+.order-fieldset__phone-input:focus + .order-fieldset__phone-icon,
+.order-fieldset__phone-input:active + .order-fieldset__phone-icon {
   opacity: 1;
   fill: $theme-color;
 }
@@ -367,12 +364,12 @@
     }
   }
 
-  .order-fieldset--phone-icon {
+  .order-fieldset__phone-icon {
     top: 0;
     right: 26px;
   }
 
-  .order-fieldset--mail-icon {
+  .order-fieldset__mail-icon {
     top: 0;
     right: 22px;
   }
@@ -537,12 +534,12 @@
     margin-left: 30px;
   }
 
-  .order-fieldset--phone-icon {
+  .order-fieldset__phone-icon {
     top: 0;
     right: 11px;
   }
 
-  .order-fieldset--mail-icon {
+  .order-fieldset__mail-icon {
     top: 0;
     right: 7px;
   }

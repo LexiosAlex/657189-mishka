@@ -65,7 +65,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1050px;
-    padding-top: 105px;
+    padding-top: 107px;
     padding-bottom: 145px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -80,6 +80,8 @@
 
   .reviews__title {
     order: 1;
+    position: relative;
+    left: -5px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -137,15 +139,17 @@
 
   .reviews__title {
     padding-left: 170px;
+    left: 0;
     font-size: 53px;
     line-height: 57px;
   }
 
   .reviews__item {
-    padding-left: 170px;
+    padding-left: 175px;
   }
 
   .reviews__text {
+    margin-bottom: 15px;
     width: 778px;
   }
 

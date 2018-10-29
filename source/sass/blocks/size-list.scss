@@ -8,12 +8,6 @@
   margin-bottom: 39px;
 }
 
-.modal-add-item__item {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 13px 0;
-}
-
 .size-list__label {
   padding: 13px 33px;
   font-weight: $font-bold;
@@ -40,18 +34,6 @@
     margin-bottom: 10px;
     margin-left: auto;
     padding: 0;
-  }
-
-  .modal-add-item__item {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 13px 0;
-  }
-
-  .modal-add-item__item:nth-child(2) {
-    .size-list__label {
-      padding: 13px 45px;
-    }
   }
 
   .size-list__label {

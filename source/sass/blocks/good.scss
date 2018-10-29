@@ -147,8 +147,10 @@
   .good {
     display: flex;
     flex-direction: column;
+    max-width: 30%;
     width: 30%;
     margin-top: 100px;
+    margin-right: 4.71%;
   }
 
   .good__image-container {
@@ -171,7 +173,7 @@
   }
 
   .good__description--toys-cart {
-    margin-bottom: 10px;
+    padding-top: 0;
   }
 
   .good__bottom {
